@@ -1,9 +1,9 @@
-﻿Log file open, 08/14/17 12:22:04
+﻿Log file open, 08/14/17 12:36:43
 LogInit:Display: Running engine for game: SR_Prototype_V2
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(109482869) SRandInit(109482869).
+LogInit:Display: RandInit(-178398334) SRandInit(-178398333).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.072620
+LogStats: Stats thread started at 9.802636
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -46,807 +46,643 @@ LogInit: Compiled with Visual C++: 19.00.24215.01
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.16
 LogInit: Command line:  
-LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Base directory: D:/UE_4.16/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.08.14-10.22.04:365][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.14-10.22.04:365][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.08.14-10.22.04:373][  0]LogInit: Computer: WINDOWS-EUOFFC3
-[2017.08.14-10.22.04:373][  0]LogInit: User: Bendick
-[2017.08.14-10.22.04:373][  0]LogInit: CPU Page size=4096, Cores=4
-[2017.08.14-10.22.04:373][  0]LogInit: High frequency timer resolution =3.914063 MHz
-[2017.08.14-10.22.04:373][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2017.08.14-10.22.04:373][  0]LogMemory: Platform Memory Stats for Windows
-[2017.08.14-10.22.04:373][  0]LogMemory: Process Physical Memory: 272.54 MB used, 272.54 MB peak
-[2017.08.14-10.22.04:373][  0]LogMemory: Process Virtual Memory: 263.03 MB used, 263.03 MB peak
-[2017.08.14-10.22.04:373][  0]LogMemory: Physical Memory: 6974.93 MB used,  9348.05 MB free, 16322.98 MB total
-[2017.08.14-10.22.04:373][  0]LogMemory: Virtual Memory: 640.55 MB used,  9348.05 MB free, 134217728.00 MB total
-[2017.08.14-10.22.04:422][  0]LogInit: Using OS detected language (en-US).
-[2017.08.14-10.22.04:422][  0]LogInit: Using OS detected locale (en-GB).
-[2017.08.14-10.22.04:424][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2017.08.14-10.22.05:035][  0]LogD3D11RHI: D3D11 adapters:
-[2017.08.14-10.22.05:456][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
-[2017.08.14-10.22.05:456][  0]LogD3D11RHI:       8119/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
-[2017.08.14-10.22.05:457][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2017.08.14-10.22.05:457][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2017.08.14-10.22.05:457][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2017.08.14-10.22.05:461][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2017.08.14-10.22.05:461][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
-[2017.08.14-10.22.05:461][  0]LogWindows: EnumDisplayDevices:
-[2017.08.14-10.22.05:461][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
-[2017.08.14-10.22.05:462][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
-[2017.08.14-10.22.05:462][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2017.08.14-10.22.05:462][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2017.08.14-10.22.05:462][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2017.08.14-10.22.05:462][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
-[2017.08.14-10.22.05:462][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
-[2017.08.14-10.22.05:462][  0]LogD3D11RHI:      Driver Date: 5-1-2017
-[2017.08.14-10.22.05:462][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2017.08.14-10.22.05:850][  0]LogD3D11RHI: Async texture creation enabled
-[2017.08.14-10.22.05:933][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2017.08.14-10.22.06:022][  0]LogShaderCompilers: Guid format shader working directory is -32 characters bigger than the processId version (../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Intermediate/Shaders/WorkingDirectory/4632/).
-[2017.08.14-10.22.06:022][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Bendick/AppData/Local/Temp/UnrealShaderWorkingDir/6801ABED4AB8C7396E2733979FD6C517/'.
-[2017.08.14-10.22.06:022][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2017.08.14-10.22.06:676][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2017.08.14-10.22.06:708][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
-[2017.08.14-10.22.06:739][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
-[2017.08.14-10.22.06:770][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
-[2017.08.14-10.22.06:802][  0]LogTemp:Display: Loaded TP MacTargetPlatform
-[2017.08.14-10.22.06:834][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2017.08.14-10.22.06:865][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2017.08.14-10.22.06:897][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2017.08.14-10.22.06:925][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2017.08.14-10.22.06:957][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2017.08.14-10.22.06:988][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2017.08.14-10.22.07:020][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2017.08.14-10.22.07:050][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2017.08.14-10.22.07:081][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2017.08.14-10.22.07:111][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2017.08.14-10.22.07:172][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2017.08.14-10.22.07:172][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2017.08.14-10.22.07:196][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2017.08.14-10.22.07:261][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2017.08.14-10.22.07:280][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2017.08.14-10.22.07:310][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
-[2017.08.14-10.22.07:341][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2017.08.14-10.22.07:372][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2017.08.14-10.22.07:402][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2017.08.14-10.22.07:402][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2017.08.14-10.22.07:704][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2017.08.14-10.22.07:780][  0]LogDerivedDataCache: Loaded boot cache 0.07s 111MB C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2017.08.14-10.22.07:780][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
-[2017.08.14-10.22.07:780][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2017.08.14-10.22.07:780][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2017.08.14-10.22.07:780][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2017.08.14-10.22.07:780][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2017.08.14-10.22.07:790][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2017.08.14-10.22.07:802][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Bendick/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2017.08.14-10.22.07:808][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2017.08.14-10.22.07:808][  0]LogSlate: Using Freetype 2.6.0
-[2017.08.14-10.22.07:809][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.14-10.22.07:809][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2017.08.14-10.22.08:011][  0]LogInit: Selected Device Profile: [Windows]
-[2017.08.14-10.22.08:156][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
-[2017.08.14-10.22.08:184][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2017.08.14-10.22.08:213][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
-[2017.08.14-10.22.08:213][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
-[2017.08.14-10.22.08:213][  0]LogMeshUtilities: No automatic mesh merging module available
-[2017.08.14-10.22.08:563][  0]LogNetVersion: SR_Prototype_V2 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2634772556)
-[2017.08.14-10.22.08:611][  0]LogAssetRegistry: FAssetRegistry took 0.0239 seconds to start up
-[2017.08.14-10.22.08:650][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.025141 seconds
-[2017.08.14-10.22.08:653][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
-[2017.08.14-10.22.08:653][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
-[2017.08.14-10.22.08:653][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2017.08.14-10.22.08:693][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2017.08.14-10.22.10:184][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2017.08.14-10.22.10:213][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2017.08.14-10.22.10:545][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2017.08.14-10.22.10:786][  0]SourceControl: Info Source control is disabled
-[2017.08.14-10.22.10:807][  0]SourceControl: Info Source control is disabled
-[2017.08.14-10.22.10:836][  0]SourceControl: Info Source control is disabled
-[2017.08.14-10.22.10:864][  0]SourceControl: Info Source control is disabled
-[2017.08.14-10.22.11:266][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2017.08.14-10.22.11:625][  0]LogEngine: Initializing Engine...
-[2017.08.14-10.22.11:625][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2017.08.14-10.22.11:753][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2017.08.14-10.22.11:753][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2017.08.14-10.22.11:834][  0]LogAIModule: Creating AISystem for world Untitled
-[2017.08.14-10.22.11:841][  0]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.22.11:855][  0]LogInit: FAudioDevice initialized.
-[2017.08.14-10.22.11:890][  0]LogDerivedDataCache: Saved boot cache 0.03s 111MB C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
-[2017.08.14-10.22.11:901][  0]LogInit: Texture streaming: Disabled
-[2017.08.14-10.22.11:960][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2017.08.14-10.22.12:095][  0]LogInit: Transaction tracking system initialized
-[2017.08.14-10.22.12:283][  0]BlueprintLog: New page: Editor Load
-[2017.08.14-10.22.12:851][  0]LocalizationService: Info Localization service is disabled
-[2017.08.14-10.22.13:272][  0]LogConsoleResponse:Display: 
-[2017.08.14-10.22.13:371][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2017.08.14-10.22.13:371][  0]LogCook:Display: Mobile HDR setting 1
-[2017.08.14-10.22.13:607][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' took 0.01s
-[2017.08.14-10.22.13:981][  0]SourceControl: Info Source control is disabled
-[2017.08.14-10.22.13:981][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2017.08.14-10.22.13:982][  0]LightingResults: New page: Lighting Build
-[2017.08.14-10.22.14:006][  0]MapCheck: New page: Map Check
-[2017.08.14-10.22.14:006][  0]LightingResults: New page: Lighting Build
-[2017.08.14-10.22.14:404][  0]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.22.14:412][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2017.08.14-10.22.14:423][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2017.08.14-10.22.14:453][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 29.763ms to complete.
-[2017.08.14-10.22.14:453][  0]LogFileHelpers: Loading map 'ScanReach_Map' took 0.472
-[2017.08.14-10.22.14:572][  0]LogCollectionManager: Loaded 0 collections in 0.000956 seconds
-[2017.08.14-10.22.14:638][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' took 0.01s
-[2017.08.14-10.22.14:638][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Bendick/Collections/' took 0.01s
-[2017.08.14-10.22.14:638][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' took 0.01s
-[2017.08.14-10.22.14:638][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
-[2017.08.14-10.22.14:644][  0]LogContentBrowser: Native class hierarchy populated in 0.0062 seconds. Added 2329 classes and 491 folders.
-[2017.08.14-10.22.14:685][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2017.08.14-10.22.14:708][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2017.08.14-10.22.14:734][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2017.08.14-10.22.14:789][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2017.08.14-10.22.14:792][  0]LogSlate: Took 0.000155 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2017.08.14-10.22.14:794][  0]LogSlate: Took 0.000100 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2017.08.14-10.22.14:797][  0]LogSlate: Took 0.000166 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2017.08.14-10.22.14:855][  0]LogRenderer: Reallocating scene render targets to support 1272x604 NumSamples 1 (Frame:1).
-[2017.08.14-10.22.14:936][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2017.08.14-10.22.14:984][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
-[2017.08.14-10.22.14:984][  0]LogLoad: (Engine Initialization) Total time: 11.66 seconds
-[2017.08.14-10.22.14:984][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.13 seconds
-[2017.08.14-10.22.14:984][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2017.08.14-10.22.14:984][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2017.08.14-10.22.15:324][  0]LogOcInput: OculusInput pre-init called
-[2017.08.14-10.22.15:324][  0]LogHMD: Starting GearVRController plugin
-[2017.08.14-10.22.15:334][  0]LogAssetRegistry: Asset discovery search completed in 6.7442 seconds
-[2017.08.14-10.22.15:335][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
-[2017.08.14-10.22.15:335][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
-[2017.08.14-10.22.15:394][  0]LogRenderer: Reallocating scene render targets to support 1272x624 NumSamples 1 (Frame:2).
-[2017.08.14-10.22.15:394][  0]LogSlate: Took 0.000084 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.08.14-10.22.16:320][  3]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
-[2017.08.14-10.22.16:350][  3]LogSlate: Took 0.000176 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.08.14-10.22.16:701][ 42]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
-[2017.08.14-10.22.17:609][146]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.08.14-10.22.28:782][479]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.22.28:799][479]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.28:800][479]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.22.28:800][479]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:22:28)
-[2017.08.14-10.22.28:801][479]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.22.28:804][479]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002442s)
-[2017.08.14-10.22.28:804][479]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.22.28:804][479]LogPlayLevel: PIE: World Init took: (0.000477s)
-[2017.08.14-10.22.28:804][479]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003043s)
-[2017.08.14-10.22.28:813][479]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.22.28:823][479]LogInit: FAudioDevice initialized.
-[2017.08.14-10.22.28:893][479]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.22.28:895][479]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.22.28
-[2017.08.14-10.22.28:895][479]LogWorld: Bringing up level for play took: 0.001063
-[2017.08.14-10.22.28:921][479]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
-[2017.08.14-10.22.28:927][479]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.138
-[2017.08.14-10.22.28:928][479]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.28:943][479]LogRenderer: Reallocating scene render targets to support 1292x756 NumSamples 1 (Frame:1).
-[2017.08.14-10.22.37:102][456]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.37:151][456]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.38:627][630]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
-[2017.08.14-10.22.39:447][719]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
-[2017.08.14-10.22.40:317][817]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.22.40:327][817]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.40:327][817]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.22.40:327][817]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:22:40)
-[2017.08.14-10.22.40:327][817]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.22.40:330][817]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002560s)
-[2017.08.14-10.22.40:330][817]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.22.40:330][817]LogPlayLevel: PIE: World Init took: (0.000416s)
-[2017.08.14-10.22.40:330][817]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003095s)
-[2017.08.14-10.22.40:340][817]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.22.40:349][817]LogInit: FAudioDevice initialized.
-[2017.08.14-10.22.40:401][817]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.22.40:403][817]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.22.40
-[2017.08.14-10.22.40:403][817]LogWorld: Bringing up level for play took: 0.001090
-[2017.08.14-10.22.40:409][817]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.657
-[2017.08.14-10.22.40:409][817]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.41:278][918]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.22.41:328][918]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.23.04:457][689]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.23.04:467][689]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.23.04:467][689]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.23.04:467][689]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:23:04)
-[2017.08.14-10.23.04:467][689]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.23.04:470][689]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002773s)
-[2017.08.14-10.23.04:471][689]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.23.04:471][689]LogPlayLevel: PIE: World Init took: (0.000582s)
-[2017.08.14-10.23.04:471][689]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003481s)
-[2017.08.14-10.23.04:481][689]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.23.04:490][689]LogInit: FAudioDevice initialized.
-[2017.08.14-10.23.04:541][689]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.23.04:543][689]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.23.04
-[2017.08.14-10.23.04:543][689]LogWorld: Bringing up level for play took: 0.001068
-[2017.08.14-10.23.04:549][689]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.517
-[2017.08.14-10.23.04:549][689]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.23.11:749][549]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.23.11:795][549]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.23.12:734][659]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
-[2017.08.14-10.23.26:476][290]LogSlate: Took 0.000085 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
-[2017.08.14-10.23.26:602][290]LogSavePackage: Save=101.45ms
-[2017.08.14-10.23.26:602][290]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapD697FB6449D84089979C94B3A0044E19.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
-[2017.08.14-10.23.26:604][290]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
-[2017.08.14-10.23.26:644][290]LogSavePackage: Save=11.12ms
-[2017.08.14-10.23.26:644][290]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataCCEE2E8E423F0E5590AACFA3F63395B9.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
-[2017.08.14-10.23.26:645][290]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
-[2017.08.14-10.23.27:115][331]LogSavePackage: Save=102.42ms
-[2017.08.14-10.23.27:115][331]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map15A7548F40B89BE5CF86E28BEBDD0CBC.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
-[2017.08.14-10.23.27:115][331]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
-[2017.08.14-10.23.27:148][331]LogSavePackage: Save=8.31ms
-[2017.08.14-10.23.27:148][331]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData3285D7484CDBA3F7B5976DAE3513B6F3.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
-[2017.08.14-10.23.27:149][331]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
-[2017.08.14-10.23.27:541][378]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
-[2017.08.14-10.24.01:857][862]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
-[2017.08.14-10.24.04:413][165]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
-[2017.08.14-10.24.08:763][678]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.24.08:773][678]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.24.08:773][678]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.24.08:773][678]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:24:08)
-[2017.08.14-10.24.08:773][678]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.24.08:776][678]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002648s)
-[2017.08.14-10.24.08:776][678]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.24.08:776][678]LogPlayLevel: PIE: World Init took: (0.000446s)
-[2017.08.14-10.24.08:776][678]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003210s)
-[2017.08.14-10.24.08:786][678]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.24.08:795][678]LogInit: FAudioDevice initialized.
-[2017.08.14-10.24.08:846][678]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.24.08:848][678]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.24.08
-[2017.08.14-10.24.08:849][678]LogWorld: Bringing up level for play took: 0.001391
-[2017.08.14-10.24.08:856][678]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.21
-[2017.08.14-10.24.08:856][678]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.24.51:981][211]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.24.52:053][211]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.24.53:983][217]LogEditorViewport: Clicking on Actor (LMB): CameraActor (CameraActor)
-[2017.08.14-10.25.04:335][456]Cmd: TRANSACTION UNDO
-[2017.08.14-10.25.04:336][456]LogEditorTransaction: Undo Move Actors
-[2017.08.14-10.25.08:659][970]LogSlate: Took 0.000125 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2017.08.14-10.25.12:657][433]LogSavePackage: Save=106.34ms
-[2017.08.14-10.25.12:657][433]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map6E23F6AB40912EB66903D0A3396A09A9.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
-[2017.08.14-10.25.12:659][433]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
-[2017.08.14-10.25.12:695][433]LogSavePackage: Save=8.45ms
-[2017.08.14-10.25.12:695][433]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData62143E32406F3721E4209FBB22910FB9.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
-[2017.08.14-10.25.12:696][433]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
-[2017.08.14-10.25.13:909][578]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.25.13:919][578]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.25.13:919][578]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.25.13:919][578]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:25:13)
-[2017.08.14-10.25.13:919][578]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.25.13:922][578]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002764s)
-[2017.08.14-10.25.13:923][578]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.25.13:923][578]LogPlayLevel: PIE: World Init took: (0.000490s)
-[2017.08.14-10.25.13:923][578]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003380s)
-[2017.08.14-10.25.13:934][578]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.25.13:944][578]LogInit: FAudioDevice initialized.
-[2017.08.14-10.25.13:994][578]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.25.13:996][578]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.25.13
-[2017.08.14-10.25.13:996][578]LogWorld: Bringing up level for play took: 0.001553
-[2017.08.14-10.25.14:004][578]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.938
-[2017.08.14-10.25.14:004][578]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.25.19:195][197]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.25.19:269][197]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.25.19:946][275]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
-[2017.08.14-10.25.20:180][299]LogEditorViewport: Clicking on Actor (context menu): BP_Ship_C (BP_Ship)
-[2017.08.14-10.25.21:049][372]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 112 classes and 0 folders.
-[2017.08.14-10.25.21:487][372]LogSlate: Took 0.000118 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2017.08.14-10.26.50:993][875]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.26.51:504][911]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
-[2017.08.14-10.26.51:806][911]LogSavePackage: Save=292.98ms
-[2017.08.14-10.26.51:806][911]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_ShipDBE146874B4990E6C5D30FB364633DFA.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
-[2017.08.14-10.26.51:808][911]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
-[2017.08.14-10.26.52:114][946]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.26.52:126][946]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.26.52:126][946]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.26.52:126][946]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:26:52)
-[2017.08.14-10.26.52:126][946]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.26.52:130][946]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003268s)
-[2017.08.14-10.26.52:130][946]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.26.52:130][946]LogPlayLevel: PIE: World Init took: (0.000560s)
-[2017.08.14-10.26.52:130][946]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004010s)
-[2017.08.14-10.26.52:151][946]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.26.52:160][946]LogInit: FAudioDevice initialized.
-[2017.08.14-10.26.52:217][946]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.26.52:218][946]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.26.52
-[2017.08.14-10.26.52:219][946]LogWorld: Bringing up level for play took: 0.001076
-[2017.08.14-10.26.52:227][946]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.839
-[2017.08.14-10.26.52:227][946]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.26.57:022][517]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.26.57:093][517]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.27.01:236][  0]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.27.01:774][ 42]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.27.01:784][ 42]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.27.01:784][ 42]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.27.01:784][ 42]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:27:01)
-[2017.08.14-10.27.01:784][ 42]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.27.01:787][ 42]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002603s)
-[2017.08.14-10.27.01:787][ 42]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.27.01:787][ 42]LogPlayLevel: PIE: World Init took: (0.000520s)
-[2017.08.14-10.27.01:787][ 42]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003253s)
-[2017.08.14-10.27.01:810][ 42]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.27.01:819][ 42]LogInit: FAudioDevice initialized.
-[2017.08.14-10.27.01:874][ 42]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.27.01:876][ 42]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.27.01
-[2017.08.14-10.27.01:876][ 42]LogWorld: Bringing up level for play took: 0.001080
-[2017.08.14-10.27.01:885][ 42]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.819
-[2017.08.14-10.27.01:885][ 42]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.27.03:543][237]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.27.03:612][237]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.27.35:137][976]LogSlate: Took 0.002324 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
-[2017.08.14-10.27.38:043][310]LogTemp: Dropped CameraDefaultLocation on Category Clicked Zoom
-[2017.08.14-10.27.39:949][523]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.28.40:933][678]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.30.24:623][983]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.30.25:308][ 41]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.30.25:319][ 41]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.30.25:319][ 41]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.30.25:319][ 41]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:30:25)
-[2017.08.14-10.30.25:319][ 41]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.30.25:322][ 41]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003205s)
-[2017.08.14-10.30.25:323][ 41]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.30.25:323][ 41]LogPlayLevel: PIE: World Init took: (0.000441s)
-[2017.08.14-10.30.25:323][ 41]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003778s)
-[2017.08.14-10.30.25:342][ 41]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.30.25:352][ 41]LogInit: FAudioDevice initialized.
-[2017.08.14-10.30.25:410][ 41]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.30.25:412][ 41]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.30.25
-[2017.08.14-10.30.25:412][ 41]LogWorld: Bringing up level for play took: 0.001058
-[2017.08.14-10.30.25:421][ 41]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.355
-[2017.08.14-10.30.25:421][ 41]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.30.26:924][217]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.30.26:989][217]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.31.58:563][113]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.31.59:294][148]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
-[2017.08.14-10.31.59:605][148]LogSavePackage: Save=298.90ms
-[2017.08.14-10.31.59:605][148]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Ship93DD99BA4D0ABE205D47B6BC7CDD837F.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
-[2017.08.14-10.31.59:607][148]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
-[2017.08.14-10.32.00:172][214]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.32.00:183][214]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.00:183][214]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.32.00:183][214]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:32:00)
-[2017.08.14-10.32.00:183][214]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.32.00:187][214]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003791s)
-[2017.08.14-10.32.00:188][214]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.32.00:188][214]LogPlayLevel: PIE: World Init took: (0.000907s)
-[2017.08.14-10.32.00:188][214]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004931s)
-[2017.08.14-10.32.00:207][214]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.32.00:216][214]LogInit: FAudioDevice initialized.
-[2017.08.14-10.32.00:273][214]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.32.00:274][214]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.32.00
-[2017.08.14-10.32.00:275][214]LogWorld: Bringing up level for play took: 0.001072
-[2017.08.14-10.32.00:283][214]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.782
-[2017.08.14-10.32.00:284][214]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.02:834][516]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.02:904][516]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.20:494][614]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.32.20:504][614]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.20:504][614]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.32.20:504][614]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:32:20)
-[2017.08.14-10.32.20:504][614]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.32.20:507][614]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002561s)
-[2017.08.14-10.32.20:507][614]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.32.20:507][614]LogPlayLevel: PIE: World Init took: (0.000565s)
-[2017.08.14-10.32.20:507][614]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003265s)
-[2017.08.14-10.32.20:521][614]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.32.20:530][614]LogInit: FAudioDevice initialized.
-[2017.08.14-10.32.20:583][614]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.32.20:585][614]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.32.20
-[2017.08.14-10.32.20:585][614]LogWorld: Bringing up level for play took: 0.001084
-[2017.08.14-10.32.20:594][614]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.472
-[2017.08.14-10.32.20:594][614]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.25:820][237]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.25:886][237]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.30:404][767]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.32.30:415][767]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.32.30:415][767]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.32.30:415][767]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:32:30)
-[2017.08.14-10.32.30:415][767]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.32.30:418][767]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002522s)
-[2017.08.14-10.32.30:418][767]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.32.30:418][767]LogPlayLevel: PIE: World Init took: (0.000415s)
-[2017.08.14-10.32.30:418][767]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003066s)
-[2017.08.14-10.32.30:435][767]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.32.30:444][767]LogInit: FAudioDevice initialized.
-[2017.08.14-10.32.30:500][767]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.32.30:502][767]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.32.30
-[2017.08.14-10.32.30:502][767]LogWorld: Bringing up level for play took: 0.001044
-[2017.08.14-10.32.30:510][767]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.555
-[2017.08.14-10.32.30:511][767]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.06:772][986]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.06:839][986]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.26:301][306]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.33.26:311][306]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.26:311][306]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.33.26:311][306]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:33:26)
-[2017.08.14-10.33.26:311][306]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.33.26:314][306]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002523s)
-[2017.08.14-10.33.26:314][306]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.33.26:314][306]LogPlayLevel: PIE: World Init took: (0.000440s)
-[2017.08.14-10.33.26:314][306]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003086s)
-[2017.08.14-10.33.26:328][306]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.33.26:337][306]LogInit: FAudioDevice initialized.
-[2017.08.14-10.33.26:391][306]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.33.26:392][306]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.33.26
-[2017.08.14-10.33.26:393][306]LogWorld: Bringing up level for play took: 0.001058
-[2017.08.14-10.33.26:401][306]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.665
-[2017.08.14-10.33.26:401][306]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.39:926][878]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.39:994][878]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.50:823][154]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.33.51:382][198]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.33.51:392][198]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.51:392][198]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.33.51:392][198]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:33:51)
-[2017.08.14-10.33.51:392][198]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.33.51:394][198]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002668s)
-[2017.08.14-10.33.51:395][198]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.33.51:395][198]LogPlayLevel: PIE: World Init took: (0.000457s)
-[2017.08.14-10.33.51:395][198]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003261s)
-[2017.08.14-10.33.51:417][198]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.33.51:426][198]LogInit: FAudioDevice initialized.
-[2017.08.14-10.33.51:481][198]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.33.51:483][198]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.33.51
-[2017.08.14-10.33.51:483][198]LogWorld: Bringing up level for play took: 0.001206
-[2017.08.14-10.33.51:492][198]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.426
-[2017.08.14-10.33.51:492][198]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.53:926][486]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.33.53:994][486]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.10:898][491]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.34.11:744][569]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.34.11:754][569]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.11:754][569]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.34.11:754][569]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:34:11)
-[2017.08.14-10.34.11:754][569]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.34.11:756][569]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002453s)
-[2017.08.14-10.34.11:757][569]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.34.11:757][569]LogPlayLevel: PIE: World Init took: (0.000415s)
-[2017.08.14-10.34.11:757][569]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.002994s)
-[2017.08.14-10.34.11:776][569]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.34.11:786][569]LogInit: FAudioDevice initialized.
-[2017.08.14-10.34.11:845][569]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.34.11:847][569]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.34.11
-[2017.08.14-10.34.11:847][569]LogWorld: Bringing up level for play took: 0.001178
-[2017.08.14-10.34.11:858][569]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.792
-[2017.08.14-10.34.11:858][569]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.13:739][791]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.13:806][791]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.21:750][729]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.34.23:522][919]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.34.23:532][919]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.23:532][919]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.34.23:532][919]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:34:23)
-[2017.08.14-10.34.23:532][919]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.34.23:535][919]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002508s)
-[2017.08.14-10.34.23:535][919]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.34.23:535][919]LogPlayLevel: PIE: World Init took: (0.000441s)
-[2017.08.14-10.34.23:536][919]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003082s)
-[2017.08.14-10.34.23:550][919]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.34.23:560][919]LogInit: FAudioDevice initialized.
-[2017.08.14-10.34.23:615][919]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.34.23:617][919]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.34.23
-[2017.08.14-10.34.23:617][919]LogWorld: Bringing up level for play took: 0.001187
-[2017.08.14-10.34.23:628][919]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.562
-[2017.08.14-10.34.23:628][919]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.25:267][112]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.25:339][112]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.32:027][900]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.34.46:198][576]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.34.47:206][672]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
-[2017.08.14-10.34.47:508][672]LogSavePackage: Save=295.04ms
-[2017.08.14-10.34.47:508][672]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Ship725B993B4F3E340ED212E0B897979F22.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
-[2017.08.14-10.34.47:510][672]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
-[2017.08.14-10.34.47:841][710]LogTemp: Repeting last play command: New Editor Window (PIE)
-[2017.08.14-10.34.47:851][710]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.47:851][710]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2017.08.14-10.34.47:851][710]PIE: New page: PIE session: ScanReach_Map (14 Aug 2017 14:34:47)
-[2017.08.14-10.34.47:851][710]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
-[2017.08.14-10.34.47:853][710]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002483s)
-[2017.08.14-10.34.47:854][710]LogAIModule: Creating AISystem for world ScanReach_Map
-[2017.08.14-10.34.47:854][710]LogPlayLevel: PIE: World Init took: (0.000444s)
-[2017.08.14-10.34.47:854][710]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003058s)
-[2017.08.14-10.34.47:872][710]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
-[2017.08.14-10.34.47:882][710]LogInit: FAudioDevice initialized.
-[2017.08.14-10.34.47:936][710]LogLoad: Game class is 'ScanReach_GM_C'
-[2017.08.14-10.34.47:938][710]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.14-12.34.47
-[2017.08.14-10.34.47:938][710]LogWorld: Bringing up level for play took: 0.001106
-[2017.08.14-10.34.47:947][710]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.881
-[2017.08.14-10.34.47:947][710]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.58:590][965]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.34.58:659][965]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
-[2017.08.14-10.35.01:354][275]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
-[2017.08.14-10.35.01:655][275]LogSavePackage: Save=294.16ms
-[2017.08.14-10.35.01:655][275]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Ship74681E664B87628BCEF6C98E989137DD.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
-[2017.08.14-10.35.01:656][275]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
-[2017.08.14-10.35.02:441][369]BlueprintLog: New page: Compile BP_Ship
-[2017.08.14-10.35.08:826][975]LogSavePackage: Save=127.29ms
-[2017.08.14-10.35.08:826][975]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map7C55F9754D7EB01A186D57B08489E77A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
-[2017.08.14-10.35.08:828][975]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
-[2017.08.14-10.35.08:851][975]LogFileHelpers: Saving map 'ScanReach_Map' took 0.206
-[2017.08.14-10.35.09:072][976]Cmd: QUIT_EDITOR
-[2017.08.14-10.35.09:228][976]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.08.14-10.35.09:228][976]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
-[2017.08.14-10.35.09:235][976]LogExit: Preparing to exit.
-[2017.08.14-10.35.09:452][976]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' was aborted.
-[2017.08.14-10.35.09:476][976]LogExit: Editor shut down
-[2017.08.14-10.35.09:478][976]LogExit: Transaction tracking system shut down
-[2017.08.14-10.35.09:538][976]LogObj: Freed 0b from 0 cluster array pools.
-[2017.08.14-10.35.09:538][976]LogExit: Object subsystem successfully closed.
-[2017.08.14-10.35.09:552][976]LogD3D11RHI: Shutdown
-[2017.08.14-10.35.09:552][976]LogD3D11RHI: CleanupD3DDevice
-[2017.08.14-10.35.09:598][976]LogD3D11RHI: ~FD3D11DynamicRHI
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module BlueprintGraph (530)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (528)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (526)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
-[2017.08.14-10.35.09:608][976]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
-[2017.08.14-10.35.09:608][976]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' was aborted.
-[2017.08.14-10.35.09:608][976]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Bendick/Collections/' was aborted.
-[2017.08.14-10.35.09:608][976]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' was aborted.
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module BspMode (494)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
-[2017.08.14-10.35.09:608][976]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module Media (471)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module SessionServices (458)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
-[2017.08.14-10.35.09:609][976]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module MergeActors (428)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module SizeMap (426)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module TreeMap (424)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module XmlParser (408)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module Blutility (406)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
-[2017.08.14-10.35.10:180][976]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
-[2017.08.14-10.35.10:181][976]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
-[2017.08.14-10.35.10:181][976]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
-[2017.08.14-10.35.10:181][976]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
-[2017.08.14-10.35.10:181][976]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
-[2017.08.14-10.35.10:181][976]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module AutomationController (386)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module Layers (382)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module Persona (374)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
-[2017.08.14-10.35.10:232][976]LogModuleManager: Shutting down and abandoning module Kismet (368)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module Toolbox (364)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module OutputLog (358)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module GammaUI (356)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module Documentation (354)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module MovieScene (350)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module Niagara (348)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module PortalServices (340)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module AIModule (334)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
-[2017.08.14-10.35.10:239][976]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SteamVR (322)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module OculusInput (314)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module CableComponent (308)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module SourceControl (267)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module MainFrame (252)
-[2017.08.14-10.35.10:363][976]LogModuleManager: Shutting down and abandoning module HotReload (251)
-[2017.08.14-10.35.10:364][976]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
-[2017.08.14-10.35.10:364][976]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
-[2017.08.14-10.35.10:364][976]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
-[2017.08.14-10.35.10:364][976]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
-[2017.08.14-10.35.10:364][976]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
-[2017.08.14-10.35.10:364][976]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
-[2017.08.14-10.35.10:464][976]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
-[2017.08.14-10.35.10:564][976]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
-[2017.08.14-10.35.10:564][976]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
-[2017.08.14-10.35.10:564][976]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
-[2017.08.14-10.35.10:564][976]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
-[2017.08.14-10.35.10:564][976]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
-[2017.08.14-10.35.10:564][976]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module Paper2D (218)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module VREditor (204)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module UMG (192)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module Sequencer (190)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module AssetTools (188)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module MessageLog (187)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module Slate (178)
-[2017.08.14-10.35.10:565][976]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
-[2017.08.14-10.35.10:567][976]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
-[2017.08.14-10.35.10:567][976]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
-[2017.08.14-10.35.10:567][976]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
-[2017.08.14-10.35.10:567][976]LogModuleManager: Shutting down and abandoning module Networking (168)
-[2017.08.14-10.35.10:567][976]LogModuleManager: Shutting down and abandoning module Core (164)
-[2017.08.14-10.35.10:567][976]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
-[2017.08.14-10.35.10:623][976]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
-[2017.08.14-10.35.10:623][976]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' was aborted.
-[2017.08.14-10.35.10:623][976]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
-[2017.08.14-10.35.10:623][976]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
-[2017.08.14-10.35.10:624][976]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
-[2017.08.14-10.35.10:682][976]LogDerivedDataCache: Shutdown
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
-[2017.08.14-10.35.10:682][976]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Messaging (101)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module InputCore (60)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module Settings (58)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module OculusRift (56)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module GearVRController (54)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module GearVR (52)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
-[2017.08.14-10.35.10:683][976]LogOnline:Display: Unloading online subsystem: NULL
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module XMPP (43)
-[2017.08.14-10.35.10:683][976]LogModuleManager: Shutting down and abandoning module HTTP (41)
-[2017.08.14-10.35.10:683][976]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2017.08.14-10.35.10:683][976]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B922F89EB-4D3D-F990-25AE-BB88244C2CB4%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=0c75b627499df609a8813c9ced46962c%7Cfebaf0232e0e4e628b45a2bec753bbbc%7C408adb04-e8c0-4c29-a1fb-4d7ed05dedd7&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2017.08.14-10.35.10:703][976]LogModuleManager: Shutting down and abandoning module SSL (40)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module Landscape (24)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
-[2017.08.14-10.35.10:704][976]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module Renderer (14)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module Engine (12)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
-[2017.08.14-10.35.10:705][976]LogModuleManager: Shutting down and abandoning module PakFile (2)
-[2017.08.14-10.35.10:705][976]LogExit: Exiting.
-[2017.08.14-10.35.10:714][976]Log file closed, 08/14/17 12:35:10
+[2017.08.14-10.36.45:007][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.14-10.36.45:007][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.14-10.36.45:125][  0]LogInit: Computer: MAGNUS-PC
+[2017.08.14-10.36.45:125][  0]LogInit: User: Magnus
+[2017.08.14-10.36.45:125][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.08.14-10.36.45:125][  0]LogInit: High frequency timer resolution =3.117187 MHz
+[2017.08.14-10.36.45:129][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.08.14-10.36.45:129][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.14-10.36.45:129][  0]LogMemory: Process Physical Memory: 272.30 MB used, 272.30 MB peak
+[2017.08.14-10.36.45:129][  0]LogMemory: Process Virtual Memory: 258.64 MB used, 258.64 MB peak
+[2017.08.14-10.36.45:129][  0]LogMemory: Physical Memory: 6427.27 MB used,  9909.57 MB free, 16336.84 MB total
+[2017.08.14-10.36.45:129][  0]LogMemory: Virtual Memory: 635.56 MB used,  9909.57 MB free, 134217728.00 MB total
+[2017.08.14-10.36.45:951][  0]LogInit: Using OS detected language (nb-NO).
+[2017.08.14-10.36.45:951][  0]LogInit: Using OS detected locale (nb-NO).
+[2017.08.14-10.36.46:093][  0]LogTextLocalizationManager: No localization for 'nb-NO' exists, so 'en' will be used for the language.
+[2017.08.14-10.36.46:094][  0]LogTextLocalizationManager: No localization for 'nb-NO' exists, so 'en' will be used for the locale.
+[2017.08.14-10.36.50:192][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.14-10.36.50:808][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2017.08.14-10.36.50:808][  0]LogD3D11RHI:       8119/0/8168 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2017.08.14-10.36.50:809][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.14-10.36.50:809][  0]LogD3D11RHI:       0/0/8168 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.14-10.36.50:809][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.14-10.36.50:837][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.14-10.36.50:837][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.14-10.36.50:837][  0]LogWindows: EnumDisplayDevices:
+[2017.08.14-10.36.50:837][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2017.08.14-10.36.50:837][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2017.08.14-10.36.50:837][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2017.08.14-10.36.50:837][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.08.14-10.36.50:837][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.14-10.36.50:837][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2017.08.14-10.36.50:838][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.08.14-10.36.50:838][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.08.14-10.36.50:838][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.14-10.36.51:451][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.14-10.36.51:805][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.14-10.36.51:950][  0]LogShaderCompilers: Guid format shader working directory is -18 characters bigger than the processId version (C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Intermediate/Shaders/WorkingDirectory/12084/).
+[2017.08.14-10.36.51:950][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Magnus/AppData/Local/Temp/UnrealShaderWorkingDir/904B70C8405009CA3883A291682C5231/'.
+[2017.08.14-10.36.51:961][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.14-10.36.55:542][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.14-10.36.55:578][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.08.14-10.36.55:618][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.08.14-10.36.55:655][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.08.14-10.36.55:719][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.08.14-10.36.55:757][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.14-10.36.55:798][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.14-10.36.55:836][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.14-10.36.55:884][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.14-10.36.55:923][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.14-10.36.55:960][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.14-10.36.55:999][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.14-10.36.56:035][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.14-10.36.56:071][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.14-10.36.56:108][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.14-10.36.56:181][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.14-10.36.56:181][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.14-10.36.56:210][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.14-10.36.56:387][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.14-10.36.56:415][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.14-10.36.56:454][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.14-10.36.56:494][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.14-10.36.56:538][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.14-10.36.56:579][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.14-10.36.56:579][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.14-10.36.57:818][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.14-10.36.58:265][  0]LogDerivedDataCache: Loaded boot cache 0.45s 111MB C:/Users/Magnus/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.14-10.36.58:265][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Magnus/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.08.14-10.36.58:265][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.14-10.36.58:265][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.14-10.36.58:265][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.14-10.36.58:265][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.14-10.36.58:341][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.14-10.36.58:353][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Magnus/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.14-10.36.58:406][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.08.14-10.36.58:458][  0]LogSlate: Using Freetype 2.6.0
+[2017.08.14-10.36.58:534][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.14-10.36.58:534][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.14-10.37.05:808][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.14-10.37.07:083][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.08.14-10.37.07:197][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.08.14-10.37.07:245][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.08.14-10.37.07:245][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.08.14-10.37.07:245][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.14-10.37.11:392][  0]LogNetVersion: SR_Prototype_V2 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2634772556)
+[2017.08.14-10.37.11:673][  0]LogAssetRegistry: FAssetRegistry took 0.0430 seconds to start up
+[2017.08.14-10.37.11:801][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 1 prioritized culture(s) in 0.064720 seconds
+[2017.08.14-10.37.11:807][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.08.14-10.37.11:807][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.08.14-10.37.11:807][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.14-10.37.11:880][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.08.14-10.37.26:117][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.14-10.37.26:168][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.14-10.37.27:435][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.14-10.37.28:193][  0]SourceControl: Info Source control is disabled
+[2017.08.14-10.37.28:255][  0]SourceControl: Info Source control is disabled
+[2017.08.14-10.37.28:337][  0]SourceControl: Info Source control is disabled
+[2017.08.14-10.37.28:374][  0]SourceControl: Info Source control is disabled
+[2017.08.14-10.37.29:218][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.08.14-10.37.29:952][  0]LogEngine: Initializing Engine...
+[2017.08.14-10.37.29:975][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.14-10.37.30:230][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.14-10.37.30:231][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.14-10.37.30:606][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.14-10.37.30:746][  0]LogInit: XAudio2 using 'Øretelefon (HyperX 7.1 Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.08.14-10.37.30:758][  0]LogInit: FAudioDevice initialized.
+[2017.08.14-10.37.30:809][  0]LogDerivedDataCache: Saved boot cache 0.05s 111MB C:/Users/Magnus/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.14-10.37.30:822][  0]LogInit: Texture streaming: Disabled
+[2017.08.14-10.37.30:943][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.08.14-10.37.31:367][  0]LogInit: Transaction tracking system initialized
+[2017.08.14-10.37.31:781][  0]BlueprintLog: New page: Editor Load
+[2017.08.14-10.37.33:118][  0]LocalizationService: Info Localization service is disabled
+[2017.08.14-10.37.33:928][  0]LogConsoleResponse:Display: 
+[2017.08.14-10.37.35:568][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' took 0.02s
+[2017.08.14-10.37.35:568][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.14-10.37.35:568][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.14-10.37.38:441][  0]SourceControl: Info Source control is disabled
+[2017.08.14-10.37.38:520][  0]Cmd: MAP LOAD FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.14-10.37.38:526][  0]LightingResults: New page: Lighting Build
+[2017.08.14-10.37.38:726][  0]MapCheck: New page: Map Check
+[2017.08.14-10.37.38:726][  0]LightingResults: New page: Lighting Build
+[2017.08.14-10.37.40:604][  0]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.14-10.37.40:998][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.14-10.37.41:053][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.14-10.37.41:102][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 48.284ms to complete.
+[2017.08.14-10.37.41:102][  0]LogFileHelpers: Loading map 'ScanReach_Map' took 2.613
+[2017.08.14-10.37.42:181][  0]LogCollectionManager: Loaded 0 collections in 0.000750 seconds
+[2017.08.14-10.37.42:357][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' took 0.01s
+[2017.08.14-10.37.42:357][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Magnus/Collections/' took 0.01s
+[2017.08.14-10.37.42:357][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' took 0.01s
+[2017.08.14-10.37.42:357][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000019 seconds
+[2017.08.14-10.37.42:370][  0]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 2329 classes and 491 folders.
+[2017.08.14-10.37.42:449][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.08.14-10.37.43:617][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.08.14-10.37.43:709][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.08.14-10.37.44:291][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.14-10.37.44:415][  0]LogSlate: Took 0.010239 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.14-10.37.44:435][  0]LogSlate: Took 0.017316 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.08.14-10.37.44:484][  0]LogSlate: Took 0.017861 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.08.14-10.37.44:711][  0]LogRenderer: Reallocating scene render targets to support 1176x604 NumSamples 1 (Frame:1).
+[2017.08.14-10.37.45:070][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.08.14-10.37.45:159][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.08.14-10.37.45:159][  0]LogLoad: (Engine Initialization) Total time: 81.62 seconds
+[2017.08.14-10.37.45:159][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.79 seconds
+[2017.08.14-10.37.45:159][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.14-10.37.45:159][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.14-10.37.45:498][  0]LogOcInput: OculusInput pre-init called
+[2017.08.14-10.37.45:498][  0]LogHMD: Starting GearVRController plugin
+[2017.08.14-10.37.45:694][  0]LogSlate: Took 0.013732 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.14-10.37.45:866][  1]LogAssetRegistry: Asset discovery search completed in 34.2154 seconds
+[2017.08.14-10.37.45:867][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.08.14-10.37.45:867][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000033 seconds (updated 0 objects)
+[2017.08.14-10.40.19:679][426]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.14-10.40.19:935][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/ACCDECK01_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK01_2048.uasset" SILENT=true
+[2017.08.14-10.40.19:966][426]LogSavePackage: Save=16.95ms
+[2017.08.14-10.40.19:966][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK01_2048F45D0FA04CBD02B41D0F76BA9B3FAF0E.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK01_2048.uasset'
+[2017.08.14-10.40.19:972][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK01_2048.uasset
+[2017.08.14-10.40.19:976][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/ACCDECK01_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK01_2048.uasset" SILENT=true
+[2017.08.14-10.40.19:996][426]LogSavePackage: Save=3.68ms
+[2017.08.14-10.40.19:996][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK01_2048D3177C5D4B879597EE0C05A72BFA622A.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK01_2048.uasset'
+[2017.08.14-10.40.19:998][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK01_2048.uasset
+[2017.08.14-10.40.20:005][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/ACCDECK02_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK02_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:017][426]LogSavePackage: Save=11.08ms
+[2017.08.14-10.40.20:017][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK02_20482A4649C848925D8E47DF0B903A7BC702.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK02_2048.uasset'
+[2017.08.14-10.40.20:020][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK02_2048.uasset
+[2017.08.14-10.40.20:024][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/ACCDECK02_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK02_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:043][426]LogSavePackage: Save=4.45ms
+[2017.08.14-10.40.20:043][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK02_2048778316D3438AC6AB7C5749BB40021EB7.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK02_2048.uasset'
+[2017.08.14-10.40.20:045][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK02_2048.uasset
+[2017.08.14-10.40.20:055][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/ACCDECK03_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK03_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:067][426]LogSavePackage: Save=10.33ms
+[2017.08.14-10.40.20:067][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK03_2048B9793879481B5637DACF9CAAB4184DE4.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK03_2048.uasset'
+[2017.08.14-10.40.20:069][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK03_2048.uasset
+[2017.08.14-10.40.20:071][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/ACCDECK03_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK03_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:088][426]LogSavePackage: Save=3.85ms
+[2017.08.14-10.40.20:088][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK03_20488BC89C624CB99BA8141A86B7B31FFA9E.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK03_2048.uasset'
+[2017.08.14-10.40.20:090][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK03_2048.uasset
+[2017.08.14-10.40.20:097][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/ACCDECK04_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK04_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:108][426]LogSavePackage: Save=10.16ms
+[2017.08.14-10.40.20:108][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK04_204874A3007E46112E22D128BF97395690CF.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK04_2048.uasset'
+[2017.08.14-10.40.20:111][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK04_2048.uasset
+[2017.08.14-10.40.20:113][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/ACCDECK04_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK04_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:131][426]LogSavePackage: Save=4.03ms
+[2017.08.14-10.40.20:131][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK04_204846C5DA864F5A8C62C07A0C91B4A74CD4.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK04_2048.uasset'
+[2017.08.14-10.40.20:133][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK04_2048.uasset
+[2017.08.14-10.40.20:140][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/ACCDECK05_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK05_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:153][426]LogSavePackage: Save=11.32ms
+[2017.08.14-10.40.20:153][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK05_2048D3E0504D4D7D9F5050D54F8BBE8DABDD.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK05_2048.uasset'
+[2017.08.14-10.40.20:155][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK05_2048.uasset
+[2017.08.14-10.40.20:158][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/ACCDECK05_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK05_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:175][426]LogSavePackage: Save=3.97ms
+[2017.08.14-10.40.20:175][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK05_20489A9119494065D454604AC4863268636E.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK05_2048.uasset'
+[2017.08.14-10.40.20:177][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK05_2048.uasset
+[2017.08.14-10.40.20:185][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/ACCDECK06_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK06_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:198][426]LogSavePackage: Save=11.05ms
+[2017.08.14-10.40.20:198][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK06_204838F980CB4808179576369899C6AC220D.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK06_2048.uasset'
+[2017.08.14-10.40.20:200][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/ACCDECK06_2048.uasset
+[2017.08.14-10.40.20:202][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/ACCDECK06_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK06_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:220][426]LogSavePackage: Save=4.14ms
+[2017.08.14-10.40.20:220][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ACCDECK06_20481F49C97148D1D690B19B1EB86F635883.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK06_2048.uasset'
+[2017.08.14-10.40.20:222][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/ACCDECK06_2048.uasset
+[2017.08.14-10.40.20:231][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/MainDeck_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/MainDeck_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:244][426]LogSavePackage: Save=11.19ms
+[2017.08.14-10.40.20:244][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/MainDeck_2048CB19DDD34672CD056C3D5090968601A9.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/MainDeck_2048.uasset'
+[2017.08.14-10.40.20:246][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/MainDeck_2048.uasset
+[2017.08.14-10.40.20:249][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/MainDeck_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/MainDeck_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:266][426]LogSavePackage: Save=3.79ms
+[2017.08.14-10.40.20:266][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/MainDeck_20483E9152DA497B18EBBC3209827F6D16FF.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/MainDeck_2048.uasset'
+[2017.08.14-10.40.20:268][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/MainDeck_2048.uasset
+[2017.08.14-10.40.20:277][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/TankTop_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/TankTop_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:290][426]LogSavePackage: Save=11.82ms
+[2017.08.14-10.40.20:290][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/TankTop_2048C87F99294C2FC034F7EDE69AFAACDC53.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/TankTop_2048.uasset'
+[2017.08.14-10.40.20:293][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/TankTop_2048.uasset
+[2017.08.14-10.40.20:295][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/TankTop_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/TankTop_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:313][426]LogSavePackage: Save=4.13ms
+[2017.08.14-10.40.20:313][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/TankTop_2048EDB807D54818AF59DCBDB6B8C8215EF9.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/TankTop_2048.uasset'
+[2017.08.14-10.40.20:315][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/TankTop_2048.uasset
+[2017.08.14-10.40.20:323][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/Ships/TweenDeck_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/TweenDeck_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:337][426]LogSavePackage: Save=12.02ms
+[2017.08.14-10.40.20:337][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/TweenDeck_20486E6568C94A3C21B538F405B4B6C4E05F.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/TweenDeck_2048.uasset'
+[2017.08.14-10.40.20:339][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/Ships/TweenDeck_2048.uasset
+[2017.08.14-10.40.20:342][426]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/TweenDeck_2048" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/TweenDeck_2048.uasset" SILENT=true
+[2017.08.14-10.40.20:359][426]LogSavePackage: Save=3.84ms
+[2017.08.14-10.40.20:359][426]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/TweenDeck_20485D2D3DB242192FDFF169A09FB16F248E.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/TweenDeck_2048.uasset'
+[2017.08.14-10.40.20:361][426]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/TweenDeck_2048.uasset
+[2017.08.14-10.42.26:194][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Background_DarkBlue.png)
+[2017.08.14-10.42.26:379][ 81]LogTexture:Display: Building textures: T_Background_DarkBlue (BGRA8, 2050X2050)
+[2017.08.14-10.42.26:800][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Background_Grey.png)
+[2017.08.14-10.42.26:905][ 81]LogTexture:Display: Building textures: T_Background_Grey (BGRA8, 2050X2050)
+[2017.08.14-10.42.27:266][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Background_Light.png)
+[2017.08.14-10.42.27:370][ 81]LogTexture:Display: Building textures: T_Background_Light (BGRA8, 2050X2050)
+[2017.08.14-10.42.27:805][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_CogWheel_Hover.png)
+[2017.08.14-10.42.27:809][ 81]LogTexture:Display: Building textures: T_CogWheel_Hover (BGRA8, 41X41)
+[2017.08.14-10.42.27:817][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_CogWheel_Idle.png)
+[2017.08.14-10.42.27:820][ 81]LogTexture:Display: Building textures: T_CogWheel_Idle (BGRA8, 42X42)
+[2017.08.14-10.42.27:826][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_CogWheel_Press.png)
+[2017.08.14-10.42.27:829][ 81]LogTexture:Display: Building textures: T_CogWheel_Press (BGRA8, 42X42)
+[2017.08.14-10.42.27:835][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Deck_NamePlate.png)
+[2017.08.14-10.42.27:838][ 81]LogTexture:Display: Building textures: T_Deck_NamePlate (BGRA8, 202X45)
+[2017.08.14-10.42.27:846][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_ExitHover.png)
+[2017.08.14-10.42.27:848][ 81]LogTexture:Display: Building textures: T_ExitHover (BGRA8, 56X37)
+[2017.08.14-10.42.27:854][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_ExitIdle.png)
+[2017.08.14-10.42.27:856][ 81]LogTexture:Display: Building textures: T_ExitIdle (BGRA8, 56X37)
+[2017.08.14-10.42.27:861][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_ExitPress.png)
+[2017.08.14-10.42.27:864][ 81]LogTexture:Display: Building textures: T_ExitPress (BGRA8, 56X37)
+[2017.08.14-10.42.27:870][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Info_Background.png)
+[2017.08.14-10.42.27:881][ 81]LogTexture:Display: Building textures: T_Info_Background (BGRA8, 445X1082)
+[2017.08.14-10.42.27:935][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Info_StatusBackground.png)
+[2017.08.14-10.42.27:938][ 81]LogTexture:Display: Building textures: T_Info_StatusBackground (BGRA8, 445X61)
+[2017.08.14-10.42.27:946][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Info_TextHighlight.png)
+[2017.08.14-10.42.27:949][ 81]LogTexture:Display: Building textures: T_Info_TextHighlight (BGRA8, 445X39)
+[2017.08.14-10.42.27:956][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_List_ViewButton.png)
+[2017.08.14-10.42.27:961][ 81]LogTexture:Display: Building textures: T_List_ViewButton (BGRA8, 71X71)
+[2017.08.14-10.42.27:967][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_Map_ViewButton.png)
+[2017.08.14-10.42.27:970][ 81]LogTexture:Display: Building textures: T_Map_ViewButton (BGRA8, 71X71)
+[2017.08.14-10.42.27:976][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_ScrollBar.png)
+[2017.08.14-10.42.27:978][ 81]LogTexture:Display: Building textures: T_ScrollBar (BGRA8, 21X213)
+[2017.08.14-10.42.27:985][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_ScrollBar_Background.png)
+[2017.08.14-10.42.27:988][ 81]LogTexture:Display: Building textures: T_ScrollBar_Background (BGRA8, 31X986)
+[2017.08.14-10.42.27:997][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_TopBar.png)
+[2017.08.14-10.42.28:000][ 81]LogTexture:Display: Building textures: T_TopBar (BGRA8, 1922X62)
+[2017.08.14-10.42.28:014][ 81]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 C:\Users\Magnus\Desktop\Scan_Reach\UE_UI\UI_V2\T_ZoomCam_Border.png)
+[2017.08.14-10.42.28:019][ 81]LogTexture:Display: Building textures: T_ZoomCam_Border (BGRA8, 445X320)
+[2017.08.14-10.42.35:303][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_ZoomCam_Border" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ZoomCam_Border.uasset" SILENT=true
+[2017.08.14-10.42.35:317][351]LogSavePackage: Save=11.47ms
+[2017.08.14-10.42.35:317][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_ZoomCam_Border0454E7584F756B1C6A8F15AC8FA4EFF8.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ZoomCam_Border.uasset'
+[2017.08.14-10.42.35:319][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ZoomCam_Border.uasset
+[2017.08.14-10.42.35:330][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Background_DarkBlue" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_DarkBlue.uasset" SILENT=true
+[2017.08.14-10.42.35:485][351]LogSavePackage: Save=153.23ms
+[2017.08.14-10.42.35:485][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Background_DarkBlue18D418174709B1D3E22B05AE9966715B.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_DarkBlue.uasset'
+[2017.08.14-10.42.35:487][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_DarkBlue.uasset
+[2017.08.14-10.42.35:498][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Background_Grey" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_Grey.uasset" SILENT=true
+[2017.08.14-10.42.35:647][351]LogSavePackage: Save=146.40ms
+[2017.08.14-10.42.35:647][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Background_GreyF13AED1547AC4170AEC321BE4A50BBEA.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_Grey.uasset'
+[2017.08.14-10.42.35:649][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_Grey.uasset
+[2017.08.14-10.42.35:661][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Background_Light" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_Light.uasset" SILENT=true
+[2017.08.14-10.42.35:805][351]LogSavePackage: Save=142.21ms
+[2017.08.14-10.42.35:805][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Background_Light2D91BBF74D4CFCCE87FBE5AC1262D509.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_Light.uasset'
+[2017.08.14-10.42.35:807][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Background_Light.uasset
+[2017.08.14-10.42.35:811][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_CogWheel_Hover" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Hover.uasset" SILENT=true
+[2017.08.14-10.42.35:817][351]LogSavePackage: Save=4.56ms
+[2017.08.14-10.42.35:817][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_CogWheel_Hover26B4C3C44395268C357039B7F427A30D.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Hover.uasset'
+[2017.08.14-10.42.35:819][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Hover.uasset
+[2017.08.14-10.42.35:821][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_CogWheel_Idle" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Idle.uasset" SILENT=true
+[2017.08.14-10.42.35:828][351]LogSavePackage: Save=4.51ms
+[2017.08.14-10.42.35:828][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_CogWheel_Idle16CBE5564C291706508985A5775445CD.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Idle.uasset'
+[2017.08.14-10.42.35:831][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Idle.uasset
+[2017.08.14-10.42.35:834][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_CogWheel_Press" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Press.uasset" SILENT=true
+[2017.08.14-10.42.35:840][351]LogSavePackage: Save=4.72ms
+[2017.08.14-10.42.35:840][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_CogWheel_PressAD6C6F9E4D8019CFD034CDAE1AC24265.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Press.uasset'
+[2017.08.14-10.42.35:842][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_CogWheel_Press.uasset
+[2017.08.14-10.42.35:847][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Deck_NamePlate" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Deck_NamePlate.uasset" SILENT=true
+[2017.08.14-10.42.35:853][351]LogSavePackage: Save=4.99ms
+[2017.08.14-10.42.35:853][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Deck_NamePlate69D1356A467AF0C62A02E1BFF9A7026C.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Deck_NamePlate.uasset'
+[2017.08.14-10.42.35:856][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Deck_NamePlate.uasset
+[2017.08.14-10.42.35:859][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_ExitHover" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitHover.uasset" SILENT=true
+[2017.08.14-10.42.35:867][351]LogSavePackage: Save=5.22ms
+[2017.08.14-10.42.35:867][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_ExitHoverD945A4304407E966C8282197988D21D3.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitHover.uasset'
+[2017.08.14-10.42.35:870][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitHover.uasset
+[2017.08.14-10.42.35:874][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_ExitIdle" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitIdle.uasset" SILENT=true
+[2017.08.14-10.42.35:880][351]LogSavePackage: Save=4.92ms
+[2017.08.14-10.42.35:881][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_ExitIdleEAE3A2444C24F0D9A29F5DB88C3CF808.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitIdle.uasset'
+[2017.08.14-10.42.35:883][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitIdle.uasset
+[2017.08.14-10.42.35:886][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_ExitPress" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitPress.uasset" SILENT=true
+[2017.08.14-10.42.35:892][351]LogSavePackage: Save=4.62ms
+[2017.08.14-10.42.35:892][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_ExitPressA77E94854D7BDCC739EFE6B597B89B24.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitPress.uasset'
+[2017.08.14-10.42.35:894][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ExitPress.uasset
+[2017.08.14-10.42.35:900][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Info_Background" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_Background.uasset" SILENT=true
+[2017.08.14-10.42.35:923][351]LogSavePackage: Save=21.39ms
+[2017.08.14-10.42.35:923][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Info_BackgroundAD32BCBB4ECB1074182FE38D71AAFFBF.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_Background.uasset'
+[2017.08.14-10.42.35:925][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_Background.uasset
+[2017.08.14-10.42.35:936][351]LogSavePackage: Save=5.66ms
+[2017.08.14-10.42.35:936][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Info_StatusBackground859D57F0461E84C64DFCACA36B8665AB.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_StatusBackground.uasset'
+[2017.08.14-10.42.35:938][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_StatusBackground.uasset
+[2017.08.14-10.42.35:941][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Info_TextHighlight" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_TextHighlight.uasset" SILENT=true
+[2017.08.14-10.42.35:949][351]LogSavePackage: Save=5.40ms
+[2017.08.14-10.42.35:949][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Info_TextHighlightE0C30EB64EB01343501451A5C2284CCE.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_TextHighlight.uasset'
+[2017.08.14-10.42.35:951][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Info_TextHighlight.uasset
+[2017.08.14-10.42.35:954][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_List_ViewButton" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_List_ViewButton.uasset" SILENT=true
+[2017.08.14-10.42.35:961][351]LogSavePackage: Save=4.83ms
+[2017.08.14-10.42.35:961][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_List_ViewButtonF041EA194D6ECA22ABDFCEB0BA7955CC.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_List_ViewButton.uasset'
+[2017.08.14-10.42.35:963][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_List_ViewButton.uasset
+[2017.08.14-10.42.35:966][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_Map_ViewButton" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Map_ViewButton.uasset" SILENT=true
+[2017.08.14-10.42.35:973][351]LogSavePackage: Save=5.10ms
+[2017.08.14-10.42.35:973][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_Map_ViewButtonED96F2504C2DE24A40E3B2A4D5E0E947.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Map_ViewButton.uasset'
+[2017.08.14-10.42.35:975][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_Map_ViewButton.uasset
+[2017.08.14-10.42.35:979][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_ScrollBar" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ScrollBar.uasset" SILENT=true
+[2017.08.14-10.42.35:985][351]LogSavePackage: Save=4.72ms
+[2017.08.14-10.42.35:985][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_ScrollBarCE4FABF44204BCAD971ACBBE6F84858F.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ScrollBar.uasset'
+[2017.08.14-10.42.35:987][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ScrollBar.uasset
+[2017.08.14-10.42.35:998][351]LogSavePackage: Save=5.63ms
+[2017.08.14-10.42.35:998][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_ScrollBar_Background28D8D1694019A072DBC8149D11614D18.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ScrollBar_Background.uasset'
+[2017.08.14-10.42.36:001][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_ScrollBar_Background.uasset
+[2017.08.14-10.42.36:004][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Textures/UI/T_TopBar" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_TopBar.uasset" SILENT=true
+[2017.08.14-10.42.36:014][351]LogSavePackage: Save=8.67ms
+[2017.08.14-10.42.36:014][351]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/T_TopBar9DB8C91D4B45DE61E66B0696B8EA644F.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_TopBar.uasset'
+[2017.08.14-10.42.36:016][351]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Textures/UI/T_TopBar.uasset
+[2017.08.14-10.42.51:162][ 73]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 112 classes and 0 folders.
+[2017.08.14-10.42.52:312][ 73]LogSlate: Took 0.000255 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.14-10.42.52:340][ 73]LogSlate: Took 0.016180 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.08.14-10.43.23:446][701]LogSavePackage: Save=197.53ms
+[2017.08.14-10.43.23:446][701]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map26A507B54CF3708CB4F951B3078C0ED5.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.14-10.43.23:449][701]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.14-10.43.23:473][701]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Scenes/ScanReach_Map_BuiltData" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset" SILENT=true
+[2017.08.14-10.43.23:502][701]LogSavePackage: Save=15.98ms
+[2017.08.14-10.43.23:503][701]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData9EDED5DE465404A19E8C42BC2E98651D.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.14-10.43.23:503][701]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.14-10.43.40:599][526]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.14-10.43.41:038][526]LogSavePackage: Save=423.90ms
+[2017.08.14-10.43.41:038][526]LogSavePackage: Moving 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_ShipABB2C44B4C6F36E92C6B0EB772D4ED8A.tmp' to 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.14-10.43.41:040][526]LogSavePackage:Display: Finished SavePackage C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.14-10.43.41:182][526]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.14-10.43.41:416][527]Cmd: QUIT_EDITOR
+[2017.08.14-10.43.41:485][527]LogExit: Preparing to exit.
+[2017.08.14-10.43.42:504][527]LogExit: Editor shut down
+[2017.08.14-10.43.42:505][527]LogExit: Transaction tracking system shut down
+[2017.08.14-10.43.42:749][527]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.14-10.43.42:749][527]LogExit: Object subsystem successfully closed.
+[2017.08.14-10.43.42:796][527]LogD3D11RHI: Shutdown
+[2017.08.14-10.43.42:796][527]LogD3D11RHI: CleanupD3DDevice
+[2017.08.14-10.43.42:861][527]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.14-10.43.43:018][527]LogModuleManager: Shutting down and abandoning module SequencerWidgets (530)
+[2017.08.14-10.43.43:018][527]LogModuleManager: Shutting down and abandoning module BlueprintGraph (528)
+[2017.08.14-10.43.43:018][527]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (526)
+[2017.08.14-10.43.43:019][527]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.08.14-10.43.43:019][527]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.08.14-10.43.43:019][527]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.08.14-10.43.43:019][527]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.08.14-10.43.43:020][527]LogDirectoryWatcher: A directory notification for 'D:/UE_4.16/FeaturePacks/' was aborted.
+[2017.08.14-10.43.43:021][527]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.08.14-10.43.43:022][527]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.08.14-10.43.43:022][527]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.08.14-10.43.43:022][527]LogDirectoryWatcher: A directory notification for 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' was aborted.
+[2017.08.14-10.43.43:022][527]LogDirectoryWatcher: A directory notification for 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Magnus/Collections/' was aborted.
+[2017.08.14-10.43.43:022][527]LogDirectoryWatcher: A directory notification for 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' was aborted.
+[2017.08.14-10.43.43:022][527]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.08.14-10.43.43:022][527]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.08.14-10.43.43:022][527]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.08.14-10.43.43:023][527]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.08.14-10.43.43:024][527]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.08.14-10.43.43:025][527]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.08.14-10.43.43:032][527]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.08.14-10.43.43:033][527]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.08.14-10.43.43:033][527]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.08.14-10.43.43:047][527]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.08.14-10.43.43:047][527]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.08.14-10.43.43:048][527]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.08.14-10.43.43:048][527]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.08.14-10.43.43:048][527]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.08.14-10.43.43:634][527]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.08.14-10.43.43:634][527]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.08.14-10.43.43:634][527]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.08.14-10.43.43:634][527]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.08.14-10.43.43:635][527]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.08.14-10.43.43:635][527]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.08.14-10.43.43:647][527]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.08.14-10.43.43:647][527]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.08.14-10.43.43:658][527]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.08.14-10.43.43:658][527]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.08.14-10.43.43:658][527]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.08.14-10.43.43:659][527]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.08.14-10.43.43:666][527]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.08.14-10.43.43:670][527]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.08.14-10.43.43:679][527]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.08.14-10.43.43:684][527]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.08.14-10.43.43:736][527]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.08.14-10.43.43:736][527]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.08.14-10.43.43:757][527]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.08.14-10.43.43:769][527]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.08.14-10.43.43:769][527]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.08.14-10.43.43:769][527]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.08.14-10.43.43:769][527]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.08.14-10.43.43:780][527]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.08.14-10.43.43:780][527]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.08.14-10.43.43:780][527]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.08.14-10.43.43:789][527]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.08.14-10.43.43:789][527]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.08.14-10.43.43:789][527]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.08.14-10.43.43:811][527]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.08.14-10.43.43:819][527]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.08.14-10.43.43:819][527]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.08.14-10.43.43:823][527]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.08.14-10.43.43:823][527]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.08.14-10.43.43:823][527]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.08.14-10.43.43:823][527]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.08.14-10.43.43:823][527]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.08.14-10.43.43:834][527]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.08.14-10.43.43:964][527]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.08.14-10.43.43:970][527]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.08.14-10.43.43:971][527]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.08.14-10.43.43:971][527]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.08.14-10.43.43:978][527]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.08.14-10.43.43:979][527]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.08.14-10.43.43:981][527]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.08.14-10.43.43:981][527]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.08.14-10.43.43:981][527]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.08.14-10.43.43:982][527]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.08.14-10.43.43:982][527]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.08.14-10.43.43:982][527]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.08.14-10.43.43:982][527]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.08.14-10.43.43:982][527]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.08.14-10.43.43:982][527]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.08.14-10.43.44:082][527]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.08.14-10.43.44:183][527]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.08.14-10.43.44:197][527]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.08.14-10.43.44:197][527]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.08.14-10.43.44:197][527]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.08.14-10.43.44:198][527]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.08.14-10.43.44:198][527]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.08.14-10.43.44:198][527]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.08.14-10.43.44:199][527]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.08.14-10.43.44:199][527]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.08.14-10.43.44:199][527]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.08.14-10.43.44:199][527]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.08.14-10.43.44:199][527]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.08.14-10.43.44:208][527]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.08.14-10.43.44:208][527]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.08.14-10.43.44:209][527]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.08.14-10.43.44:209][527]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.08.14-10.43.44:214][527]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.08.14-10.43.44:214][527]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.08.14-10.43.44:224][527]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.08.14-10.43.44:224][527]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.08.14-10.43.44:230][527]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.08.14-10.43.44:230][527]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.08.14-10.43.44:230][527]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.08.14-10.43.44:230][527]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.08.14-10.43.44:232][527]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.08.14-10.43.44:232][527]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.08.14-10.43.44:232][527]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.08.14-10.43.44:245][527]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.08.14-10.43.44:246][527]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.08.14-10.43.44:248][527]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.08.14-10.43.44:248][527]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.08.14-10.43.44:248][527]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.08.14-10.43.44:248][527]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.08.14-10.43.44:248][527]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.08.14-10.43.44:248][527]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.08.14-10.43.44:456][527]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.08.14-10.43.44:456][527]LogDirectoryWatcher: A directory notification for 'C:/Users/Magnus/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' was aborted.
+[2017.08.14-10.43.44:456][527]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.08.14-10.43.44:456][527]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.08.14-10.43.44:459][527]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.08.14-10.43.44:525][527]LogDerivedDataCache: Shutdown
+[2017.08.14-10.43.44:525][527]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.08.14-10.43.44:525][527]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.08.14-10.43.44:525][527]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.08.14-10.43.44:537][527]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.08.14-10.43.44:547][527]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.08.14-10.43.44:547][527]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.08.14-10.43.44:566][527]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.08.14-10.43.44:567][527]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.08.14-10.43.44:567][527]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.08.14-10.43.44:567][527]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.08.14-10.43.44:567][527]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.14-10.43.44:575][527]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.08.14-10.43.44:581][527]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.08.14-10.43.44:581][527]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.08.14-10.43.44:581][527]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B2DB462E7-4675-58E6-80DA-A7A48BF64657%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=a1328f8b4b27980f4eb39a8ed1208b4f%7C07c812ce51884e509e41d7ec8613d7db%7C6aef0a9f-b728-4fc9-a3bf-f0a7ec88ec16&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.08.14-10.43.44:596][527]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.08.14-10.43.44:597][527]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.08.14-10.43.44:602][527]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.08.14-10.43.44:602][527]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.08.14-10.43.44:602][527]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.08.14-10.43.44:613][527]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.08.14-10.43.44:613][527]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.08.14-10.43.44:613][527]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.08.14-10.43.44:613][527]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.08.14-10.43.44:624][527]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.08.14-10.43.44:635][527]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.08.14-10.43.44:636][527]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.08.14-10.43.44:636][527]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.08.14-10.43.44:639][527]LogExit: Exiting.
+[2017.08.14-10.43.44:666][527]Log file closed, 08/14/17 12:43:44

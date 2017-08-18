@@ -1,0 +1,1245 @@
+﻿Log file open, 08/18/17 11:56:51
+LogInit:Display: Running engine for game: SR_Prototype_V2
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(295973569) SRandInit(295973569).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.718589
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.08.18-09.56.52:137][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.18-09.56.52:137][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.18-09.56.52:161][  0]LogInit: Computer: WINDOWS-EUOFFC3
+[2017.08.18-09.56.52:161][  0]LogInit: User: Bendick
+[2017.08.18-09.56.52:161][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.08.18-09.56.52:161][  0]LogInit: High frequency timer resolution =3.914062 MHz
+[2017.08.18-09.56.52:161][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.18-09.56.52:161][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.18-09.56.52:161][  0]LogMemory: Process Physical Memory: 272.29 MB used, 272.29 MB peak
+[2017.08.18-09.56.52:161][  0]LogMemory: Process Virtual Memory: 262.84 MB used, 262.84 MB peak
+[2017.08.18-09.56.52:161][  0]LogMemory: Physical Memory: 6851.39 MB used,  9471.58 MB free, 16322.98 MB total
+[2017.08.18-09.56.52:161][  0]LogMemory: Virtual Memory: 640.55 MB used,  9471.58 MB free, 134217728.00 MB total
+[2017.08.18-09.56.52:436][  0]LogInit: Using OS detected language (en-US).
+[2017.08.18-09.56.52:436][  0]LogInit: Using OS detected locale (en-GB).
+[2017.08.18-09.56.52:486][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.08.18-09.56.54:769][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.18-09.56.55:210][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2017.08.18-09.56.55:210][  0]LogD3D11RHI:       8119/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.08.18-09.56.55:211][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.18-09.56.55:211][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.18-09.56.55:211][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.18-09.56.55:217][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.18-09.56.55:217][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.18-09.56.55:217][  0]LogWindows: EnumDisplayDevices:
+[2017.08.18-09.56.55:217][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2017.08.18-09.56.55:217][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2017.08.18-09.56.55:217][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.08.18-09.56.55:217][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.08.18-09.56.55:217][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.18-09.56.55:217][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2017.08.18-09.56.55:218][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.08.18-09.56.55:218][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.08.18-09.56.55:218][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.18-09.56.55:620][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.18-09.56.55:747][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.18-09.56.55:844][  0]LogShaderCompilers: Guid format shader working directory is -33 characters bigger than the processId version (../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Intermediate/Shaders/WorkingDirectory/17004/).
+[2017.08.18-09.56.55:844][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Bendick/AppData/Local/Temp/UnrealShaderWorkingDir/85DA7EC9471DA5A90BE6AC81CD929B2A/'.
+[2017.08.18-09.56.55:845][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.18-09.56.57:488][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.18-09.56.57:520][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.08.18-09.56.57:551][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.08.18-09.56.57:583][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.08.18-09.56.57:619][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.08.18-09.56.57:651][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.18-09.56.57:682][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.18-09.56.57:714][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.18-09.56.57:743][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.18-09.56.57:777][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.18-09.56.57:809][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.18-09.56.57:841][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.18-09.56.57:873][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.18-09.56.57:904][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.18-09.56.57:935][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.18-09.56.57:999][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.18-09.56.57:999][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.18-09.56.58:024][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.18-09.56.58:105][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.18-09.56.58:124][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.18-09.56.58:155][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.18-09.56.58:187][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.18-09.56.58:218][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.18-09.56.58:253][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.18-09.56.58:253][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.18-09.56.58:681][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.18-09.56.59:059][  0]LogDerivedDataCache: Loaded boot cache 0.38s 111MB C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.18-09.56.59:059][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.08.18-09.56.59:059][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.18-09.56.59:059][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.18-09.56.59:059][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.18-09.56.59:059][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.18-09.56.59:079][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.18-09.56.59:091][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Bendick/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.18-09.56.59:101][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.08.18-09.56.59:107][  0]LogSlate: Using Freetype 2.6.0
+[2017.08.18-09.56.59:119][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.18-09.56.59:119][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.18-09.56.59:956][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.18-09.57.00:364][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.08.18-09.57.00:406][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.08.18-09.57.00:441][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.08.18-09.57.00:441][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.08.18-09.57.00:441][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.18-09.57.01:644][  0]LogNetVersion: SR_Prototype_V2 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2634772556)
+[2017.08.18-09.57.01:733][  0]LogAssetRegistry: FAssetRegistry took 0.0276 seconds to start up
+[2017.08.18-09.57.01:891][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.140245 seconds
+[2017.08.18-09.57.01:897][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.08.18-09.57.01:897][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.08.18-09.57.01:897][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.18-09.57.01:938][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.08.18-09.57.05:484][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.18-09.57.05:516][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.18-09.57.06:023][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.18-09.57.06:375][  0]SourceControl: Info Source control is disabled
+[2017.08.18-09.57.06:431][  0]SourceControl: Info Source control is disabled
+[2017.08.18-09.57.06:471][  0]SourceControl: Info Source control is disabled
+[2017.08.18-09.57.06:505][  0]SourceControl: Info Source control is disabled
+[2017.08.18-09.57.07:012][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.08.18-09.57.07:460][  0]LogEngine: Initializing Engine...
+[2017.08.18-09.57.07:463][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.18-09.57.07:725][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.18-09.57.07:726][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.18-09.57.07:870][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.18-09.57.07:900][  0]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-09.57.07:915][  0]LogInit: FAudioDevice initialized.
+[2017.08.18-09.57.07:951][  0]LogDerivedDataCache: Saved boot cache 0.04s 111MB C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.18-09.57.07:961][  0]LogInit: Texture streaming: Disabled
+[2017.08.18-09.57.08:030][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.08.18-09.57.08:218][  0]LogInit: Transaction tracking system initialized
+[2017.08.18-09.57.08:452][  0]BlueprintLog: New page: Editor Load
+[2017.08.18-09.57.09:206][  0]LocalizationService: Info Localization service is disabled
+[2017.08.18-09.57.09:717][  0]LogConsoleResponse:Display: 
+[2017.08.18-09.57.10:059][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' took 0.02s
+[2017.08.18-09.57.10:059][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.18-09.57.10:060][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.18-09.57.10:832][  0]SourceControl: Info Source control is disabled
+[2017.08.18-09.57.10:834][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.18-09.57.10:836][  0]LightingResults: New page: Lighting Build
+[2017.08.18-09.57.10:874][  0]MapCheck: New page: Map Check
+[2017.08.18-09.57.10:874][  0]LightingResults: New page: Lighting Build
+[2017.08.18-09.57.12:087][  0]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-09.57.12:144][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.18-09.57.12:166][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.18-09.57.12:199][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 31.913ms to complete.
+[2017.08.18-09.57.12:199][  0]LogFileHelpers: Loading map 'ScanReach_Map' took 1.366
+[2017.08.18-09.57.12:467][  0]LogCollectionManager: Loaded 0 collections in 0.000960 seconds
+[2017.08.18-09.57.12:555][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' took 0.01s
+[2017.08.18-09.57.12:555][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Bendick/Collections/' took 0.01s
+[2017.08.18-09.57.12:555][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' took 0.01s
+[2017.08.18-09.57.12:555][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.08.18-09.57.12:565][  0]LogContentBrowser: Native class hierarchy populated in 0.0072 seconds. Added 2329 classes and 491 folders.
+[2017.08.18-09.57.12:614][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.08.18-09.57.12:885][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.08.18-09.57.12:922][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.08.18-09.57.13:106][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.18-09.57.13:139][  0]LogSlate: Took 0.003953 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.18-09.57.13:144][  0]LogSlate: Took 0.004215 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.08.18-09.57.13:156][  0]LogSlate: Took 0.004363 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.08.18-09.57.13:244][  0]LogRenderer: Reallocating scene render targets to support 1920x1080 NumSamples 1 (Frame:1).
+[2017.08.18-09.57.13:407][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.08.18-09.57.13:463][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.08.18-09.57.13:463][  0]LogLoad: (Engine Initialization) Total time: 24.01 seconds
+[2017.08.18-09.57.13:463][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.32 seconds
+[2017.08.18-09.57.13:463][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.18-09.57.13:463][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.18-09.57.13:815][  0]LogOcInput: OculusInput pre-init called
+[2017.08.18-09.57.13:816][  0]LogHMD: Starting GearVRController plugin
+[2017.08.18-09.57.13:835][  0]LogAssetRegistry: Asset discovery search completed in 12.1235 seconds
+[2017.08.18-09.57.13:836][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.08.18-09.57.13:836][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000016 seconds (updated 0 objects)
+[2017.08.18-09.57.13:927][  0]LogSlate: Took 0.004198 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.18-09.57.14:808][  3]LogSlate: Took 0.000179 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.18-09.57.17:681][174]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-09.57.17:713][174]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-09.57.17:714][174]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-09.57.17:719][174]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 13:57:17)
+[2017.08.18-09.57.17:724][174]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-09.57.17:729][174]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005501s)
+[2017.08.18-09.57.17:729][174]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-09.57.17:730][174]LogPlayLevel: PIE: World Init took: (0.000400s)
+[2017.08.18-09.57.17:730][174]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.006435s)
+[2017.08.18-09.57.17:741][174]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-09.57.17:750][174]LogInit: FAudioDevice initialized.
+[2017.08.18-09.57.17:825][174]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-09.57.17:836][174]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-11.57.17
+[2017.08.18-09.57.17:838][174]LogWorld: Bringing up level for play took: 0.002390
+[2017.08.18-09.57.17:878][174]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2017.08.18-09.57.17:883][174]Set new viewmode: Unlit
+[2017.08.18-09.57.17:901][174]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.829
+[2017.08.18-09.57.17:902][174]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-09.59.19:896][162]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-09.59.19:936][162]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-09.59.49:910][252]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.04:893][  3]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.18-10.00.08:062][369]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.09:510][539]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.10:437][647]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.13:288][976]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.14:615][122]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.36:130][692]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.00.38:259][941]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.00.38:270][941]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.00.38:270][941]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.00.38:270][941]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:00:38)
+[2017.08.18-10.00.38:270][941]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.00.38:273][941]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002888s)
+[2017.08.18-10.00.38:274][941]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.00.38:274][941]LogPlayLevel: PIE: World Init took: (0.000539s)
+[2017.08.18-10.00.38:274][941]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003552s)
+[2017.08.18-10.00.38:292][941]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.00.38:302][941]LogInit: FAudioDevice initialized.
+[2017.08.18-10.00.38:352][941]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.00.38:353][941]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.00.38
+[2017.08.18-10.00.38:354][941]LogWorld: Bringing up level for play took: 0.001116
+[2017.08.18-10.00.38:354][941]Set new viewmode: Unlit
+[2017.08.18-10.00.38:361][941]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.711
+[2017.08.18-10.00.38:361][941]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.00.38:403][942]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.01.47:190][150]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 112 classes and 0 folders.
+[2017.08.18-10.01.47:720][150]LogSlate: Took 0.003381 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.08.18-10.02.03:947][ 57]LogSavePackage: Save=13.98ms
+[2017.08.18-10.02.03:947][ 57]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_ZoomcamF1AEF3A44D829D2E6A5F31A9664AF7AB.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset'
+[2017.08.18-10.02.03:950][ 57]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset
+[2017.08.18-10.02.05:406][228]LogSavePackage: Save=10.08ms
+[2017.08.18-10.02.05:406][228]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_Zoomcam14CDC6AB428FE98BC23554A1A182501A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset'
+[2017.08.18-10.02.05:407][228]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset
+[2017.08.18-10.02.21:622][161]LogSavePackage: Save=10.75ms
+[2017.08.18-10.02.21:622][161]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_Zoomcam843C0E4C4E655F33F63E0DA055F4BC57.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset'
+[2017.08.18-10.02.21:622][161]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset
+[2017.08.18-10.02.22:895][313]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.22:952][313]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.23:654][396]BlueprintLog: New page: Compile w_Zoomcam
+[2017.08.18-10.02.23:738][396]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.02.24:066][433]LogSlate: Took 0.000099 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.18-10.02.24:101][433]LogSavePackage: Save=11.02ms
+[2017.08.18-10.02.24:101][433]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_Zoomcam5358618F46AAA6CEB914EAB6F284DA6F.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset'
+[2017.08.18-10.02.24:102][433]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_Zoomcam.uasset
+[2017.08.18-10.02.25:452][595]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.02.25:465][595]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.25:465][595]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.02.25:465][595]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:02:25)
+[2017.08.18-10.02.25:465][595]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.02.25:468][595]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002525s)
+[2017.08.18-10.02.25:468][595]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.02.25:468][595]LogPlayLevel: PIE: World Init took: (0.000491s)
+[2017.08.18-10.02.25:469][595]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003165s)
+[2017.08.18-10.02.25:485][595]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.02.25:495][595]LogInit: FAudioDevice initialized.
+[2017.08.18-10.02.25:546][595]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.02.25:548][595]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.02.25
+[2017.08.18-10.02.25:548][595]LogWorld: Bringing up level for play took: 0.001526
+[2017.08.18-10.02.25:549][595]Set new viewmode: Unlit
+[2017.08.18-10.02.25:554][595]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.482
+[2017.08.18-10.02.25:554][595]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.25:604][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:604][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:604][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:604][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:605][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:605][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:605][596]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:612][597]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.25:637][600]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.31:079][253]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.31:132][253]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.44:607][869]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.02.44:619][869]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.44:619][869]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.02.44:619][869]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:02:44)
+[2017.08.18-10.02.44:619][869]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.02.44:622][869]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002461s)
+[2017.08.18-10.02.44:622][869]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.02.44:622][869]LogPlayLevel: PIE: World Init took: (0.000475s)
+[2017.08.18-10.02.44:622][869]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003063s)
+[2017.08.18-10.02.44:635][869]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.02.44:644][869]LogInit: FAudioDevice initialized.
+[2017.08.18-10.02.44:693][869]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.02.44:695][869]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.02.44
+[2017.08.18-10.02.44:695][869]LogWorld: Bringing up level for play took: 0.001348
+[2017.08.18-10.02.44:696][869]Set new viewmode: Unlit
+[2017.08.18-10.02.44:701][869]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.371
+[2017.08.18-10.02.44:701][869]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.44:732][870]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:732][870]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:732][870]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:732][870]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:732][870]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:732][870]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:748][872]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:773][875]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.44:789][877]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.02.52:332][782]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.02.52:383][782]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.03.44:162][954]LogSavePackage: Save=21.26ms
+[2017.08.18-10.03.44:162][954]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_FloorButton272C88454AA7E531F66B72884E9400E6.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_FloorButton.uasset'
+[2017.08.18-10.03.44:163][954]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_FloorButton.uasset
+[2017.08.18-10.03.47:370][334]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.18-10.03.47:399][334]LogEditorViewport: Clicking on Component (LMB): ChildActorComponent (NODE_AddChildActorComponent-1_1)
+[2017.08.18-10.03.49:684][606]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.03.49:698][606]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.03.49:698][606]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.03.49:698][606]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:03:49)
+[2017.08.18-10.03.49:698][606]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.03.49:700][606]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002590s)
+[2017.08.18-10.03.49:701][606]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.03.49:701][606]LogPlayLevel: PIE: World Init took: (0.000432s)
+[2017.08.18-10.03.49:701][606]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003137s)
+[2017.08.18-10.03.49:713][606]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.03.49:723][606]LogInit: FAudioDevice initialized.
+[2017.08.18-10.03.49:775][606]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.03.49:777][606]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.03.49
+[2017.08.18-10.03.49:777][606]LogWorld: Bringing up level for play took: 0.001051
+[2017.08.18-10.03.49:778][606]Set new viewmode: Unlit
+[2017.08.18-10.03.49:784][606]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.712
+[2017.08.18-10.03.49:784][606]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.49:826][607]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.03.57:692][551]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.03.57:742][551]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.04.10:366][ 48]LogLinker: Can't find file '/Game/Blueprints/Widgets/w_DecknamePlae'
+[2017.08.18-10.04.10:366][ 48]LogLinker: Can't find file '/Game/Blueprints/Widgets/w_DecknamePlae'
+[2017.08.18-10.04.18:211][985]LogLinker: Can't find file '/Game/Blueprints/Widgets/w_DeckNamePlate'
+[2017.08.18-10.04.18:211][985]LogLinker: Can't find file '/Game/Blueprints/Widgets/w_DeckNamePlate'
+[2017.08.18-10.04.18:270][985]LogMetaData: Removing '/Game/Blueprints/Widgets/w_DeckNamePlate.SKEL_w_DeckNamePlate_C' ref from Metadata '/Game/Blueprints/Widgets/w_DecknamePlae.PackageMetaData'
+[2017.08.18-10.04.18:270][985]LogMetaData: Removing '/Game/Blueprints/Widgets/w_DeckNamePlate.w_DeckNamePlate_C' ref from Metadata '/Game/Blueprints/Widgets/w_DecknamePlae.PackageMetaData'
+[2017.08.18-10.04.18:270][985]LogMetaData: Removing '/Game/Blueprints/Widgets/w_DeckNamePlate.w_DeckNamePlate:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Blueprints/Widgets/w_DecknamePlae.PackageMetaData'
+[2017.08.18-10.04.18:270][985]LogMetaData: Removing '/Game/Blueprints/Widgets/w_DeckNamePlate.w_DeckNamePlate:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Blueprints/Widgets/w_DecknamePlae.PackageMetaData'
+[2017.08.18-10.04.18:270][985]LogMetaData: Removing '/Game/Blueprints/Widgets/w_DeckNamePlate.w_DeckNamePlate:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Blueprints/Widgets/w_DecknamePlae.PackageMetaData'
+[2017.08.18-10.04.18:294][985]LogSavePackage: Save=6.94ms
+[2017.08.18-10.04.18:294][985]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateFCAAD4F24F482C3FDEBC54A220624AA5.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.04.18:296][985]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.04.19:064][ 54]LogSavePackage: Save=6.48ms
+[2017.08.18-10.04.19:064][ 54]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate3A72895143C34EB46BB40384D41CB450.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.04.19:065][ 54]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.04.19:847][125]LogSavePackage: Save=132.38ms
+[2017.08.18-10.04.19:847][125]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map84C7EE474B952A6292A2F99FD7376592.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.18-10.04.19:848][125]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.18-10.04.19:900][125]LogSavePackage: Save=9.33ms
+[2017.08.18-10.04.19:900][125]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData68A2CF5244C8B8699B6845AF661C862C.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.18-10.04.19:901][125]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.18-10.04.20:635][210]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.18-10.04.39:409][413]LogSlate: Took 0.003348 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.08.18-10.05.11:871][844]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.05.11:934][844]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.05.24:140][301]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.05.24:209][301]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.05.54:744][944]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.05.54:806][944]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.05.55:221][987]LogSavePackage: Save=7.84ms
+[2017.08.18-10.05.55:221][987]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate006559A1413D2A7A462D4B9B885BCC80.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.05.55:223][987]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.07.11:915][159]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.07.11:979][159]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.07.12:357][197]LogSavePackage: Save=9.77ms
+[2017.08.18-10.07.12:357][197]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateCC85EF364D6725F425C00D97C9B8FE65.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.07.12:359][197]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.07.13:852][372]LogSavePackage: Save=8.91ms
+[2017.08.18-10.07.13:852][372]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate7889F16644998A59DFA708A62E30C3D6.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.07.13:853][372]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.07.18:017][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262615.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:017][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262614.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:017][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262613.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:017][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262612.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:017][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262611.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:018][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262610.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:018][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262609.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:018][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262608.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.18:018][866]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262616.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:522][402]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.164 s
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: === Handled ensure: ===
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: 
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: Ensure condition failed: Obj != nullptr [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Editor\PropertyEditor\Private\PropertyChangeListener.cpp] [Line: 246]
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: 
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: Stack: 
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000293BE2B6
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000002916B8C2
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x0000000029181E86
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C76C9A2
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Sequencer.dll!0x0000000019D2CBB1
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Sequencer.dll!0x0000000019CD7A5E
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-CoreUObject.dll!0x000000003B0C971B
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Engine.dll!0x000000001588B316
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000159507C1
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Engine.dll!0x0000000015950394
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-CoreUObject.dll!0x000000003B0F5D3E
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-CoreUObject.dll!0x000000003B0F2526
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Engine.dll!0x000000001588B2E6
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Engine.dll!0x000000001594FF60
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Engine.dll!0x00000000158F4855
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C80DDEB
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C803698
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C803C39
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C841754
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8DFC82
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8CF907
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B0BAB
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B2E6A
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B2397
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8D96C4
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B02BB
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B284A
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B2397
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8D985D
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8AFD9B
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B24DA
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8B2397
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8DBC9C
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-PropertyEditor.dll!0x000000001C8D7939
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043A49E9C
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043A19835
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043ABE5E2
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043AA720F
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043A98391
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000293B175B
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000002939B7D1
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000293B33DB
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x0000000029397B22
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: USER32.dll!0x0000000071A7BC50
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: USER32.dll!0x0000000071A7B5CF
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000293B3CE6
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA4DB44
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA3F0B0
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA3F12A
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA50CF9
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA525F7
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: KERNEL32.DLL!0x0000000071EC2774
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: ntdll.dll!0x0000000073540D51
+[2017.08.18-10.07.39:522][402]LogOutputDevice:Error: 
+[2017.08.18-10.07.39:523][402]LogStats:                SubmitErrorReport -  0.000 s
+[2017.08.18-10.07.39:877][402]LogStats:                    SendNewReport -  0.355 s
+[2017.08.18-10.07.39:877][402]LogStats:             FDebug::EnsureFailed -  0.519 s
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262651.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262650.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262649.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262648.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262647.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262646.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262645.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262644.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.39:888][402]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262652.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262687.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262686.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262685.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262684.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262683.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262682.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262681.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262680.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.42:899][748]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262688.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.45:421][ 46]LogSavePackage: Save=8.96ms
+[2017.08.18-10.07.45:421][ 46]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate06B1926D4D0CF8F04D4EFFBC7C523485.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.07.45:422][ 46]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.07.55:671][271]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262604.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:567][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262605.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262624.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.56:603][271]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262625.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.07.57:356][351]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.07.57:409][351]LogSavePackage: Save=33.61ms
+[2017.08.18-10.07.57:409][351]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_FloorF5E3EEC44A5AEFD475E4D6AB62CABDA4.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.07.57:411][351]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.07.58:094][433]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.07.58:112][433]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.07.58:123][433]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.07.58:123][433]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:07:58)
+[2017.08.18-10.07.58:124][433]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.07.58:126][433]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002773s)
+[2017.08.18-10.07.58:127][433]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.07.58:127][433]LogPlayLevel: PIE: World Init took: (0.000628s)
+[2017.08.18-10.07.58:127][433]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003561s)
+[2017.08.18-10.07.58:142][433]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.07.58:152][433]LogInit: FAudioDevice initialized.
+[2017.08.18-10.07.58:198][433]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.07.58:200][433]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.07.58
+[2017.08.18-10.07.58:200][433]LogWorld: Bringing up level for play took: 0.002042
+[2017.08.18-10.07.58:201][433]Set new viewmode: Unlit
+[2017.08.18-10.07.58:208][433]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.864
+[2017.08.18-10.07.58:208][433]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.07.58:295][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:295][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:295][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:295][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:295][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:295][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:296][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.07.58:296][434]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.03:157][ 16]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.08.03:213][ 16]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.08.13:375][220]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:411][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262604.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262624.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:508][220]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262625.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.13:912][259]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.08.13:960][259]LogSavePackage: Save=32.02ms
+[2017.08.18-10.08.13:960][259]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Floor4C50F9964100E48BAA25D09417059A3C.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.08.13:962][259]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.08.14:638][340]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.08.14:656][340]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.08.14:656][340]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.08.14:656][340]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:08:14)
+[2017.08.18-10.08.14:656][340]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.08.14:659][340]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002655s)
+[2017.08.18-10.08.14:659][340]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.08.14:659][340]LogPlayLevel: PIE: World Init took: (0.000442s)
+[2017.08.18-10.08.14:659][340]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003215s)
+[2017.08.18-10.08.14:675][340]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.08.14:684][340]LogInit: FAudioDevice initialized.
+[2017.08.18-10.08.14:732][340]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.08.14:735][340]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.08.14
+[2017.08.18-10.08.14:735][340]LogWorld: Bringing up level for play took: 0.002089
+[2017.08.18-10.08.14:736][340]Set new viewmode: Unlit
+[2017.08.18-10.08.14:742][340]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.33
+[2017.08.18-10.08.14:743][340]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:827][341]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:847][342]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:847][342]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.14:861][344]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.08.24:254][471]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.08.24:310][471]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262660.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262659.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262658.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262657.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262656.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262655.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262654.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262653.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.34:702][689]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262661.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262678.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262677.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262676.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262675.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262674.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262673.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262672.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:474][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262671.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.08.50:475][573]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262679.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262696.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262695.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262694.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262693.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262692.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262691.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:415][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262690.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:416][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262689.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.05:416][355]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262697.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.08:690][742]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262732.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262731.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262730.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262729.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262728.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262727.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262726.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:069][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262725.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.11:070][ 21]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262733.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:427][142]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:455][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262605.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262624.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.20:549][142]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262625.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.21:153][208]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.09.21:201][208]LogSavePackage: Save=31.69ms
+[2017.08.18-10.09.21:201][208]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Floor34B0CBF44770F47DFD3A25A61474E5E9.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.09.21:203][208]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262643.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262635.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262636.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262637.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262638.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262639.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262640.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262641.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.23:816][520]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262642.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.09.52:831][980]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.09.52:918][980]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.09.53:362][ 27]LogSavePackage: Save=11.21ms
+[2017.08.18-10.09.53:362][ 27]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateBF63FF9D4F946CFA034BB593431A5A3B.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.09.53:363][ 27]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.10.02:843][162]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.10.02:915][162]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.10.03:315][204]LogSavePackage: Save=10.81ms
+[2017.08.18-10.10.03:315][204]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateA82779F24B64DBA65C8FF4BF131772C9.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.10.03:316][204]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.10.14:183][507]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262604.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:972][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262605.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262624.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.14:995][507]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262625.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.15:346][544]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.10.15:396][544]LogSavePackage: Save=34.17ms
+[2017.08.18-10.10.15:396][544]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Floor2A73C2F3439446685530ACB85EE2AE3A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.10.15:397][544]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262642.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262641.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262640.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262639.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262638.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262637.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262636.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262635.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.17:119][749]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262643.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.19:512][ 30]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262678.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262677.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262676.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262675.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262674.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262673.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262672.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262671.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.21:804][298]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262679.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.28:568][109]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.10.29:435][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262604.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:436][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262605.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:465][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262624.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:465][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:465][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:466][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:466][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:466][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:466][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:466][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:466][109]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262625.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.29:798][141]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.10.29:846][141]LogSavePackage: Save=31.85ms
+[2017.08.18-10.10.29:846][141]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Floor9BDA97FB425BE9CCAC788A8E7B171728.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.10.29:848][141]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262660.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262659.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262658.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262657.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262656.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262655.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262654.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262653.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.33:271][545]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262661.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.10.41:531][533]LogEditorTransaction: Undo Modify Component(s)
+[2017.08.18-10.11.07:367][556]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:396][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262605.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262624.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.07:517][556]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262625.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.11.08:046][612]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.11.08:094][612]LogSavePackage: Save=31.45ms
+[2017.08.18-10.11.08:094][612]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_FloorF7494DD848830D5090642095D82C624F.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.11.08:096][612]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.11.08:811][698]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.11.08:829][698]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.11.08:829][698]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.11.08:829][698]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:11:08)
+[2017.08.18-10.11.08:829][698]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.11.08:832][698]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002876s)
+[2017.08.18-10.11.08:833][698]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.11.08:833][698]LogPlayLevel: PIE: World Init took: (0.000508s)
+[2017.08.18-10.11.08:833][698]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003515s)
+[2017.08.18-10.11.08:847][698]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.11.08:857][698]LogInit: FAudioDevice initialized.
+[2017.08.18-10.11.08:906][698]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.11.08:909][698]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.11.08
+[2017.08.18-10.11.08:909][698]LogWorld: Bringing up level for play took: 0.002377
+[2017.08.18-10.11.08:910][698]Set new viewmode: Unlit
+[2017.08.18-10.11.08:917][698]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.155
+[2017.08.18-10.11.08:917][698]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.08:993][699]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.09:012][700]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.09:018][701]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.11.13:477][236]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.11.13:529][236]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.11.21:918][230]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plain)
+[2017.08.18-10.11.22:439][266]LogSavePackage: Save=148.25ms
+[2017.08.18-10.11.22:439][266]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map588FF3204FCB71FB2B2B209B4583C0D0.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.18-10.11.22:441][266]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.18-10.11.22:490][266]LogSavePackage: Save=6.23ms
+[2017.08.18-10.11.22:490][266]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData964305D44123D846F2ABF9AF5AC2F138.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.18-10.11.22:491][266]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.18-10.11.23:594][398]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.18-10.11.35:321][777]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.08.18-10.11.38:982][209]Cmd: DELETE
+[2017.08.18-10.11.38:982][209]Cmd: ACTOR DELETE
+[2017.08.18-10.11.38:988][209]LogEditorActor: Deleted Actor: BP_Floor_C
+[2017.08.18-10.11.39:003][209]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2017.08.18-10.12.06:617][479]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.12.06:695][479]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.12.07:044][515]LogSavePackage: Save=12.64ms
+[2017.08.18-10.12.07:044][515]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateF4054F9D4CE7E177EBE4B18F74D60FC6.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.12.07:045][515]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.12.19:264][972]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.12.19:328][972]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.12.19:650][  6]LogSavePackage: Save=10.43ms
+[2017.08.18-10.12.19:650][  6]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate160A0F7749B13040BAC89AAF72016C3B.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.12.19:651][  6]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.12.28:527][ 65]LogSavePackage: Save=9.45ms
+[2017.08.18-10.12.28:527][ 65]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate64DDF72741A4085D22955D8D46D71FEA.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.12.28:527][ 65]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263301.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263302.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263303.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263304.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263305.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263306.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263307.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263308.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.12.41:519][615]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_263309.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.13.12:419][315]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.13.12:505][315]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.13.12:978][366]LogSavePackage: Save=10.07ms
+[2017.08.18-10.13.12:978][366]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate06191D86427A4FDD45F24290ADFF2078.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.13.12:980][366]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.13.14:891][590]LogSavePackage: Save=9.62ms
+[2017.08.18-10.13.14:892][590]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate6C23EB3C48EDB46D47C80DA57B7A22F6.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.13.14:892][590]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.13.56:084][521]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.13.56:178][521]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.13.56:582][562]LogSavePackage: Save=24.72ms
+[2017.08.18-10.13.56:583][562]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate0B805D7449BDB7CDC9FEA5B3AC81D41A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.13.56:584][562]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.14.09:455][102]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.14.09:531][102]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.14.10:013][154]LogSavePackage: Save=10.19ms
+[2017.08.18-10.14.10:013][154]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate74443E204B95CEEC9C8F7295792D5D14.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.14.10:015][154]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.14.42:128][  5]BlueprintLog: New page: Compile BP_Floor
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262603.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262602.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262601.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262600.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262599.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262598.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262597.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:161][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262605.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:240][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262622.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262621.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262620.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262619.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262618.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262617.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262616.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262615.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:241][  5]LogActorComponent: RegisterComponentWithWorld: (/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.DESTROYED_BP_Floor_C_CHILDACTOR_262623.Scene) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.08.18-10.14.42:759][ 60]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.14.42:813][ 60]LogSavePackage: Save=34.82ms
+[2017.08.18-10.14.42:813][ 60]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Floor7A1988764F9CA915DD4529BF48010490.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.14.42:815][ 60]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.14.47:430][612]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Floor" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset" SILENT=true
+[2017.08.18-10.14.47:473][612]LogSavePackage: Save=27.36ms
+[2017.08.18-10.14.47:473][612]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_FloorAD2801A344DFB00C112F34AF8008FBA5.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset'
+[2017.08.18-10.14.47:474][612]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Floor.uasset
+[2017.08.18-10.14.58:511][935]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.14.58:534][935]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.14.58:534][935]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.14.58:534][935]PIE: New page: PIE session: ScanReach_Map (18 Aug 2017 14:14:58)
+[2017.08.18-10.14.58:534][935]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.18-10.14.58:537][935]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002924s)
+[2017.08.18-10.14.58:537][935]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.18-10.14.58:538][935]LogPlayLevel: PIE: World Init took: (0.000439s)
+[2017.08.18-10.14.58:538][935]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003494s)
+[2017.08.18-10.14.58:551][935]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.18-10.14.58:561][935]LogInit: FAudioDevice initialized.
+[2017.08.18-10.14.58:614][935]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.18-10.14.58:617][935]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.18-12.14.58
+[2017.08.18-10.14.58:619][935]LogWorld: Bringing up level for play took: 0.004576
+[2017.08.18-10.14.58:620][935]Set new viewmode: Unlit
+[2017.08.18-10.14.58:628][935]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.443
+[2017.08.18-10.14.58:629][935]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:672][936]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:679][937]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.14.58:696][939]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.18-10.15.08:630][131]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.15.08:671][131]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.15.11:018][407]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.18-10.15.12:806][617]LogEditorViewport: Clicking on Actor (context menu): BP_Ship_C (BP_Ship)
+[2017.08.18-10.15.23:805][853]LogSlate: Took 0.003264 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.08.18-10.15.28:257][384]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.15.28:366][384]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.15.28:872][438]LogSavePackage: Save=10.20ms
+[2017.08.18-10.15.28:872][438]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateE46A2094488A3FE0F0A2ED9CCC4A6C27.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.15.28:874][438]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.15.34:448][ 97]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.15.34:451][ 97]LogBlueprint:Error: [Compiler w_DeckNamePlate] Error Internal Compiler Error: Tried to create a property DeckName in scope w_DeckNamePlate_C, but another object (TextProperty DeckName) already already exists there.
+[2017.08.18-10.15.34:614][ 97]BlueprintEditorCompileResults:Error: Error Internal Compiler Error: Tried to create a property DeckName in scope w_DeckNamePlate_C, but another object (TextProperty DeckName) already already exists there.
+[2017.08.18-10.15.34:614][ 97]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.15.34:614][ 97]LogBlueprint:Warning: [Compiler w_DeckNamePlate] Warning [1125.16] Compile of w_DeckNamePlate failed. 1 Fatal Issue(s) 0 Warning(s) [in 166 ms] (/Game/Blueprints/Widgets/w_DeckNamePlate.w_DeckNamePlate)
+[2017.08.18-10.15.35:012][139]LogSavePackage: Save=10.26ms
+[2017.08.18-10.15.35:012][139]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate01EBF6A840CD41E8D11BDCB2FEEDCE4A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.15.35:014][139]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.15.35:671][218]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.18-10.15.35:690][218]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.18-10.15.35:690][218]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.18-10.15.57:148][295]LogSavePackage: Save=10.00ms
+[2017.08.18-10.15.57:148][295]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlate279C94D64A092EE7FE0B9590117B6253.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.15.57:150][295]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.15.57:907][386]BlueprintLog: New page: Compile w_DeckNamePlate
+[2017.08.18-10.15.58:025][386]BlueprintEditorCompileResults: Info Fast Template Successfully Created.
+[2017.08.18-10.15.58:466][433]LogSavePackage: Save=10.88ms
+[2017.08.18-10.15.58:466][433]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/w_DeckNamePlateD2B6BEC049BB3DD52CE87B9F5D9A6675.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset'
+[2017.08.18-10.15.58:467][433]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Widgets/w_DeckNamePlate.uasset
+[2017.08.18-10.16.10:652][855]LogUObjectArray:Warning: Other object in slot
+[2017.08.18-10.16.10:660][855]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.008 s
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: === Handled ensure: ===
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: 
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: Ensure condition failed: false [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Editor\UnrealEd\Private\Kismet2\KismetDebugUtilities.cpp] [Line: 1037]
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: Error: Invalid (but non-null) property associated with pin; cannot get variable value
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: Stack: 
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Core.dll!0x00000000293BE2B6
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000002916B8C2
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Core.dll!0x0000000029181E86
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x0000000028057556
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-BlueprintGraph.dll!0x000000001F6CD27B
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x000000001C2E24AA
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x000000001C1872CC
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x000000001C18A6D9
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x000000001C2A8035
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043A6DB57
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043A74B61
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043C948D3
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043ACF604
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043AC9170
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor-Slate.dll!0x0000000043AC8A55
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA4ED59
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA3F0B0
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA3F12A
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA50CF9
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: UE4Editor.exe!0x000000001CA525F7
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: KERNEL32.DLL!0x0000000071EC2774
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: ntdll.dll!0x0000000073540D51
+[2017.08.18-10.16.10:660][855]LogOutputDevice:Error: 
+[2017.08.18-10.16.10:669][855]LogStats:                SubmitErrorReport -  0.000 s

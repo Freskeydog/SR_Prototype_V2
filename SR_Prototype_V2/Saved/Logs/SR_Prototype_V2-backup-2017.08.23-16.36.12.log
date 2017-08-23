@@ -1,0 +1,1850 @@
+﻿Log file open, 08/23/17 15:18:11
+LogInit:Display: Running engine for game: SR_Prototype_V2
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1908428326) SRandInit(-1908428326).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.072399
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.08.23-13.18.11:654][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.23-13.18.11:654][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.23-13.18.11:661][  0]LogInit: Computer: WINDOWS-EUOFFC3
+[2017.08.23-13.18.11:661][  0]LogInit: User: Bendick
+[2017.08.23-13.18.11:661][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.08.23-13.18.11:661][  0]LogInit: High frequency timer resolution =3.914067 MHz
+[2017.08.23-13.18.11:661][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.23-13.18.11:661][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.23-13.18.11:661][  0]LogMemory: Process Physical Memory: 272.96 MB used, 272.96 MB peak
+[2017.08.23-13.18.11:661][  0]LogMemory: Process Virtual Memory: 264.86 MB used, 264.86 MB peak
+[2017.08.23-13.18.11:661][  0]LogMemory: Physical Memory: 5636.98 MB used,  10686.00 MB free, 16322.98 MB total
+[2017.08.23-13.18.11:661][  0]LogMemory: Virtual Memory: 642.62 MB used,  10686.00 MB free, 134217728.00 MB total
+[2017.08.23-13.18.11:704][  0]LogInit: Using OS detected language (en-US).
+[2017.08.23-13.18.11:704][  0]LogInit: Using OS detected locale (en-GB).
+[2017.08.23-13.18.11:706][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.08.23-13.18.12:304][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.23-13.18.12:703][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2017.08.23-13.18.12:703][  0]LogD3D11RHI:       8119/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.08.23-13.18.12:704][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.23-13.18.12:704][  0]LogD3D11RHI:       0/0/8161 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.23-13.18.12:704][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.23-13.18.12:708][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.23-13.18.12:708][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.23-13.18.12:708][  0]LogWindows: EnumDisplayDevices:
+[2017.08.23-13.18.12:708][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2017.08.23-13.18.12:708][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2017.08.23-13.18.12:708][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.08.23-13.18.12:708][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.08.23-13.18.12:708][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.08.23-13.18.12:708][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2017.08.23-13.18.12:708][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.08.23-13.18.12:708][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.08.23-13.18.12:708][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.23-13.18.13:091][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.23-13.18.13:181][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.08.23-13.18.13:270][  0]LogShaderCompilers: Guid format shader working directory is -33 characters bigger than the processId version (../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Intermediate/Shaders/WorkingDirectory/12764/).
+[2017.08.23-13.18.13:270][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Bendick/AppData/Local/Temp/UnrealShaderWorkingDir/4E3FC88442033D5E324EE0ABA8EE28E0/'.
+[2017.08.23-13.18.13:270][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.23-13.18.13:914][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.23-13.18.13:947][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.08.23-13.18.13:981][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.08.23-13.18.14:012][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.08.23-13.18.14:045][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.08.23-13.18.14:076][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.23-13.18.14:109][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.23-13.18.14:142][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.23-13.18.14:170][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.23-13.18.14:201][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.23-13.18.14:233][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.23-13.18.14:263][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.23-13.18.14:293][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.23-13.18.14:323][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.23-13.18.14:355][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.23-13.18.14:415][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.23-13.18.14:415][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.23-13.18.14:440][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.23-13.18.14:504][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.23-13.18.14:523][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.23-13.18.14:553][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.23-13.18.14:583][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.23-13.18.14:614][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.23-13.18.14:644][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.23-13.18.14:644][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.23-13.18.14:944][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.23-13.18.15:018][  0]LogDerivedDataCache: Loaded boot cache 0.07s 111MB C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.23-13.18.15:018][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.08.23-13.18.15:018][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.23-13.18.15:018][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.23-13.18.15:018][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.23-13.18.15:018][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.23-13.18.15:029][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.23-13.18.15:040][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Bendick/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.23-13.18.15:047][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.08.23-13.18.15:047][  0]LogSlate: Using Freetype 2.6.0
+[2017.08.23-13.18.15:047][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.23-13.18.15:047][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.23-13.18.15:251][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.23-13.18.15:399][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.08.23-13.18.15:427][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.08.23-13.18.15:456][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.08.23-13.18.15:456][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.08.23-13.18.15:456][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.23-13.18.15:807][  0]LogNetVersion: SR_Prototype_V2 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2634772556)
+[2017.08.23-13.18.15:855][  0]LogAssetRegistry: FAssetRegistry took 0.0240 seconds to start up
+[2017.08.23-13.18.15:892][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.023772 seconds
+[2017.08.23-13.18.15:896][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.08.23-13.18.15:896][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2017.08.23-13.18.15:896][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.23-13.18.15:935][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.08.23-13.18.17:406][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.23-13.18.17:434][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.23-13.18.17:765][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.23-13.18.18:007][  0]SourceControl: Info Source control is disabled
+[2017.08.23-13.18.18:028][  0]SourceControl: Info Source control is disabled
+[2017.08.23-13.18.18:059][  0]SourceControl: Info Source control is disabled
+[2017.08.23-13.18.18:086][  0]SourceControl: Info Source control is disabled
+[2017.08.23-13.18.18:488][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.08.23-13.18.18:845][  0]LogEngine: Initializing Engine...
+[2017.08.23-13.18.18:846][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.23-13.18.18:974][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.23-13.18.18:974][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.23-13.18.19:051][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.23-13.18.19:057][  0]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.18.19:070][  0]LogInit: FAudioDevice initialized.
+[2017.08.23-13.18.19:104][  0]LogDerivedDataCache: Saved boot cache 0.03s 111MB C:/Users/Bendick/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.23-13.18.19:117][  0]LogInit: Texture streaming: Disabled
+[2017.08.23-13.18.19:176][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.08.23-13.18.19:307][  0]LogInit: Transaction tracking system initialized
+[2017.08.23-13.18.19:495][  0]BlueprintLog: New page: Editor Load
+[2017.08.23-13.18.20:054][  0]LocalizationService: Info Localization service is disabled
+[2017.08.23-13.18.20:466][  0]LogConsoleResponse:Display: 
+[2017.08.23-13.18.20:564][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.23-13.18.20:564][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.23-13.18.20:801][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' took 0.01s
+[2017.08.23-13.18.21:182][  0]SourceControl: Info Source control is disabled
+[2017.08.23-13.18.21:182][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.23-13.18.21:183][  0]LightingResults: New page: Lighting Build
+[2017.08.23-13.18.21:208][  0]MapCheck: New page: Map Check
+[2017.08.23-13.18.21:208][  0]LightingResults: New page: Lighting Build
+[2017.08.23-13.18.21:916][  0]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.18.21:942][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.23-13.18.21:956][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.23-13.18.21:987][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 31.068ms to complete.
+[2017.08.23-13.18.21:987][  0]LogFileHelpers: Loading map 'ScanReach_Map' took 0.804
+[2017.08.23-13.18.22:047][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.23-13.18.22:047][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.23-13.18.22:100][  0]LogCollectionManager: Loaded 0 collections in 0.000934 seconds
+[2017.08.23-13.18.22:164][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' took 0.01s
+[2017.08.23-13.18.22:164][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Bendick/Collections/' took 0.01s
+[2017.08.23-13.18.22:164][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' took 0.01s
+[2017.08.23-13.18.22:165][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.08.23-13.18.22:170][  0]LogContentBrowser: Native class hierarchy populated in 0.0058 seconds. Added 2329 classes and 491 folders.
+[2017.08.23-13.18.22:209][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2017.08.23-13.18.22:230][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2017.08.23-13.18.22:256][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2017.08.23-13.18.22:311][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.23-13.18.22:315][  0]LogSlate: Took 0.000118 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.23-13.18.22:317][  0]LogSlate: Took 0.000118 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.08.23-13.18.22:320][  0]LogSlate: Took 0.000089 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.08.23-13.18.22:380][  0]LogRenderer: Reallocating scene render targets to support 1920x1080 NumSamples 1 (Frame:1).
+[2017.08.23-13.18.22:462][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.08.23-13.18.22:509][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.08.23-13.18.22:509][  0]LogLoad: (Engine Initialization) Total time: 11.88 seconds
+[2017.08.23-13.18.22:509][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.25 seconds
+[2017.08.23-13.18.22:509][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.08.23-13.18.22:509][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.08.23-13.18.22:520][  0]LogOcInput: OculusInput pre-init called
+[2017.08.23-13.18.22:520][  0]LogHMD: Starting GearVRController plugin
+[2017.08.23-13.18.22:531][  0]LogAssetRegistry: Asset discovery search completed in 6.6979 seconds
+[2017.08.23-13.18.22:532][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2017.08.23-13.18.22:532][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000015 seconds (updated 0 objects)
+[2017.08.23-13.18.22:607][  0]LogSlate: Took 0.000114 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.23-13.18.23:542][100]LogSlate: Took 0.000120 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.23-13.18.25:161][293]LogSlate: Took 0.000095 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.23-13.18.25:350][293]LogSavePackage: Save=151.95ms
+[2017.08.23-13.18.25:350][293]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapDDBFD7EB4E8E19A59A1E2997E051481B.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.18.25:351][293]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.18.25:411][293]LogSavePackage: Save=9.03ms
+[2017.08.23-13.18.25:411][293]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataC42F2FAD4E351B43A7D5AFA824482F6A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.18.25:412][293]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.18.26:355][405]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.18.26:389][405]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.18.26:389][405]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.18.26:389][405]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:18:26)
+[2017.08.23-13.18.26:391][405]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.18.26:394][405]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003363s)
+[2017.08.23-13.18.26:395][405]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.18.26:395][405]LogPlayLevel: PIE: World Init took: (0.000353s)
+[2017.08.23-13.18.26:395][405]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003846s)
+[2017.08.23-13.18.26:402][405]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.18.26:411][405]LogInit: FAudioDevice initialized.
+[2017.08.23-13.18.26:479][405]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.18.26:482][405]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.18.26
+[2017.08.23-13.18.26:483][405]LogWorld: Bringing up level for play took: 0.003118
+[2017.08.23-13.18.26:509][405]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2017.08.23-13.18.26:518][405]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.57
+[2017.08.23-13.18.26:518][405]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.18.28:865][681]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.18.28:906][681]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.18.35:660][481]Cmd: SELECT NONE
+[2017.08.23-13.19.36:399][819]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.08.23-13.19.54:741][241]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.19.55:183][289]LogEditorViewport: Clicking on Actor (context menu): BP_Ship_C (BP_Ship)
+[2017.08.23-13.19.57:467][556]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.20.00:296][880]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.20.00:313][880]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.00:313][880]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.20.00:313][880]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:20:00)
+[2017.08.23-13.20.00:313][880]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.20.00:317][880]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003497s)
+[2017.08.23-13.20.00:317][880]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.20.00:317][880]LogPlayLevel: PIE: World Init took: (0.000395s)
+[2017.08.23-13.20.00:317][880]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004012s)
+[2017.08.23-13.20.00:326][880]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.20.00:337][880]LogInit: FAudioDevice initialized.
+[2017.08.23-13.20.00:389][880]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.20.00:392][880]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.20.00
+[2017.08.23-13.20.00:392][880]LogWorld: Bringing up level for play took: 0.002907
+[2017.08.23-13.20.00:402][880]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.686
+[2017.08.23-13.20.00:402][880]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.08:319][821]LogActor:Warning: BP_PawnPassenger_1181 is outside the world bounds!
+[2017.08.23-13.20.08:327][822]LogActor:Warning: BP_PawnPassenger2 is outside the world bounds!
+[2017.08.23-13.20.09:903][ 11]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.09:961][ 11]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.11:150][151]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.20.11:163][151]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.11:163][151]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.20.11:163][151]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:20:11)
+[2017.08.23-13.20.11:163][151]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.20.11:167][151]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003422s)
+[2017.08.23-13.20.11:167][151]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.20.11:167][151]LogPlayLevel: PIE: World Init took: (0.000356s)
+[2017.08.23-13.20.11:167][151]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.003901s)
+[2017.08.23-13.20.11:178][151]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.20.11:190][151]LogInit: FAudioDevice initialized.
+[2017.08.23-13.20.11:242][151]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.20.11:246][151]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.20.11
+[2017.08.23-13.20.11:246][151]LogWorld: Bringing up level for play took: 0.003301
+[2017.08.23-13.20.11:256][151]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.168
+[2017.08.23-13.20.11:256][151]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:301][152]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:317][154]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:334][156]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:350][158]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:375][161]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:392][163]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:417][166]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:434][168]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:450][170]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:475][173]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:492][175]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:517][178]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:534][180]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:550][182]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:575][185]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:592][187]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:617][190]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:634][192]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:651][194]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:675][197]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:692][199]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.11:717][202]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.36:660][192]LogActor:Warning: BP_PawnPassenger_1181 is outside the world bounds!
+[2017.08.23-13.20.36:668][193]LogActor:Warning: BP_PawnPassenger2 is outside the world bounds!
+[2017.08.23-13.20.41:919][823]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.41:977][823]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.48:628][597]LogEditorViewport: Clicking on Actor (LMB): NavMeshBoundsVolume (NavMeshBoundsVolume)
+[2017.08.23-13.20.54:273][234]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.20.54:287][234]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.54:287][234]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.20.54:287][234]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:20:54)
+[2017.08.23-13.20.54:287][234]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.20.54:291][234]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003730s)
+[2017.08.23-13.20.54:291][234]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.20.54:291][234]LogPlayLevel: PIE: World Init took: (0.000389s)
+[2017.08.23-13.20.54:291][234]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004263s)
+[2017.08.23-13.20.54:300][234]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.20.54:309][234]LogInit: FAudioDevice initialized.
+[2017.08.23-13.20.54:360][234]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.20.54:363][234]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.20.54
+[2017.08.23-13.20.54:364][234]LogWorld: Bringing up level for play took: 0.003053
+[2017.08.23-13.20.54:373][234]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.714
+[2017.08.23-13.20.54:374][234]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:419][235]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:435][237]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:460][240]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:477][242]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:494][244]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:518][247]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:535][249]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:560][252]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:577][254]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:593][256]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:618][259]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:635][261]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:660][264]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:677][266]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:694][268]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:718][271]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:735][273]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:760][276]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:777][278]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.20.54:793][280]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.00:085][914]LogActor:Warning: BP_PawnPassenger_1181 is outside the world bounds!
+[2017.08.23-13.21.00:085][914]LogActor:Warning: BP_PawnPassenger2 is outside the world bounds!
+[2017.08.23-13.21.00:244][933]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.21.00:299][933]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.21.04:335][409]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.21.07:272][717]LogSavePackage: Save=142.08ms
+[2017.08.23-13.21.07:272][717]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map6F171C2044BAD1F221D3BF84924514D0.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.21.07:274][717]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.21.07:331][717]LogSavePackage: Save=7.54ms
+[2017.08.23-13.21.07:331][717]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData2888B47B4BC96493A6D39C9509F4FA9F.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.21.07:332][717]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.21.07:775][770]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.21.07:788][770]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.21.07:788][770]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.21.07:788][770]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:21:07)
+[2017.08.23-13.21.07:788][770]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.21.07:792][770]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003596s)
+[2017.08.23-13.21.07:792][770]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.21.07:792][770]LogPlayLevel: PIE: World Init took: (0.000375s)
+[2017.08.23-13.21.07:792][770]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004088s)
+[2017.08.23-13.21.07:800][770]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.21.07:809][770]LogInit: FAudioDevice initialized.
+[2017.08.23-13.21.07:857][770]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.21.07:860][770]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.21.07
+[2017.08.23-13.21.07:861][770]LogWorld: Bringing up level for play took: 0.002971
+[2017.08.23-13.21.07:870][770]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.782
+[2017.08.23-13.21.07:870][770]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.21.07:915][771]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:915][771]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:915][771]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:915][771]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:915][771]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:915][771]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:923][772]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:939][774]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:956][776]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:981][779]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.07:997][781]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:023][784]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:039][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:056][788]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:081][791]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:098][793]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:123][796]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:139][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:156][800]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:181][803]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:197][805]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:223][808]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:239][810]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:256][812]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:281][815]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:298][817]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:323][820]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.08:339][822]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.21.12:740][350]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.21.12:807][350]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.21.15:315][624]LogSavePackage: Save=141.13ms
+[2017.08.23-13.21.15:315][624]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map19B364E347F51DB7B3DD32BFA29C4A41.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.21.15:317][624]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.21.15:376][624]LogSavePackage: Save=7.42ms
+[2017.08.23-13.21.15:376][624]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData22DCFD6745FEF352B9D37E8689BDDCD3.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.21.15:377][624]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.22.07:651][853]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.22.09:330][ 30]LogSavePackage: Save=143.20ms
+[2017.08.23-13.22.09:330][ 30]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapEB5F3623430740AF0B69DA924EDE9439.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.22.09:330][ 30]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.22.09:389][ 30]LogSavePackage: Save=7.34ms
+[2017.08.23-13.22.09:389][ 30]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData487475FE40CB44F906E5ABA32106BF2E.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.22.09:390][ 30]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.22.10:530][164]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.22.10:962][206]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.22.11:345][246]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.25.56:971][280]LogSavePackage: Save=143.52ms
+[2017.08.23-13.25.56:971][280]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapEFC6EF6440B683F388E30086E21F7687.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.25.56:973][280]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.25.57:033][280]LogSavePackage: Save=7.48ms
+[2017.08.23-13.25.57:033][280]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataD2BBE4514B8B9F106721B0A92F9BB78A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.25.57:034][280]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.26.00:421][668]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.26.13:769][221]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.26.14:478][280]LogSavePackage: Save=140.96ms
+[2017.08.23-13.26.14:478][280]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map6C26B14541A3D6F80D649B9186346F0F.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.26.14:480][280]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.26.14:537][280]LogSavePackage: Save=7.37ms
+[2017.08.23-13.26.14:537][280]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataD4EF2EE3406FFA35A63891A549E6C02C.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.26.14:538][280]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.26.15:235][341]LogSavePackage: Save=143.21ms
+[2017.08.23-13.26.15:235][341]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapDE29F3E64867A25C9C75C58873B31B58.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.26.15:236][341]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.26.15:292][341]LogSavePackage: Save=7.38ms
+[2017.08.23-13.26.15:292][341]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData268D8C9B4FC5ECFDEBEF8386D738A088.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.26.15:292][341]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.26.17:407][594]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.26.23:159][244]LogSavePackage: Save=142.59ms
+[2017.08.23-13.26.23:159][244]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapD096FAC34F5DB796007A50B6F0B460E2.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.26.23:160][244]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.26.23:215][244]LogSavePackage: Save=7.34ms
+[2017.08.23-13.26.23:215][244]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataA53005274FBD85DF43DCD5A81C73397D.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.26.23:216][244]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.26.23:887][324]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.26.24:315][374]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.26.24:707][417]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.26.25:061][455]LogEditorViewport: Clicking on Actor (context menu): BP_Ship_C (BP_Ship)
+[2017.08.23-13.26.26:139][554]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 112 classes and 0 folders.
+[2017.08.23-13.26.26:570][554]LogSlate: Took 0.000115 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.08.23-13.26.26:645][555]LogSlate: Took 0.000124 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.08.23-13.26.27:564][663]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.27:697][663]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.133 s
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: === Handled ensure: ===
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: 
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: Ensure condition failed: false [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Editor\UnrealEd\Private\Kismet2\KismetDebugUtilities.cpp] [Line: 1037]
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: Error: Invalid (but non-null) property associated with pin; cannot get variable value
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: Stack: 
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A6BE2B6
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A46B8C2
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A481E86
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-UnrealEd.dll!0x00000000050A7556
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-BlueprintGraph.dll!0x00000000037AD27B
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x00000000029424AA
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x00000000027E72CC
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x00000000027EA6D9
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-GraphEditor.dll!0x0000000002908035
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000063BDB57
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000063C4B61
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000065E48D3
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Slate.dll!0x000000000641F604
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000063F77FC
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Slate.dll!0x00000000063E814C
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A6B15B0
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A69B7D1
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A6B33DB
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A697B22
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: USER32.dll!0x00000000599CBC50
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: USER32.dll!0x00000000599CB5CF
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor-Core.dll!0x000000000A6B3CE6
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor.exe!0x00000000A322DB44
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor.exe!0x00000000A321F0B0
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor.exe!0x00000000A321F12A
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor.exe!0x00000000A3230CF9
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: UE4Editor.exe!0x00000000A32325F7
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: KERNEL32.DLL!0x0000000058032774
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: ntdll.dll!0x000000005A350D51
+[2017.08.23-13.26.27:697][663]LogOutputDevice:Error: 
+[2017.08.23-13.26.27:699][663]LogStats:                SubmitErrorReport -  0.000 s
+[2017.08.23-13.26.27:828][663]LogStats:                    SendNewReport -  0.128 s
+[2017.08.23-13.26.27:828][663]LogStats:             FDebug::EnsureFailed -  0.264 s
+[2017.08.23-13.26.27:828][663]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:378][843]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:378][843]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:379][843]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:380][843]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:381][843]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:386][844]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:387][844]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:389][844]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:395][845]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:396][845]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:397][845]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:811][895]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:811][895]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:813][895]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:814][895]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:820][896]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:821][896]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:822][896]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:829][897]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:829][897]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.29:831][897]LogUObjectBase:Warning: Object is not registered
+[2017.08.23-13.26.59:339][354]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.26.59:646][355]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array Decks of length 0!
+[2017.08.23-13.27.01:989][631]LogScriptCore:Warning: Script Msg: Attempted to access index 0 from array Decks of length 0!
+[2017.08.23-13.27.10:791][673]Cmd: SELECT NONE
+[2017.08.23-13.27.47:207][  1]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.28.14:147][140]LogSlate: Took 0.000134 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.08.23-13.28.36:270][745]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.28.48:143][ 94]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.23-13.28.48:717][ 94]LogSavePackage: Save=547.87ms
+[2017.08.23-13.28.48:717][ 94]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Ship0A07A2B34188B9D2D7A9B0B5AF8E0603.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.23-13.28.48:719][ 94]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.23-13.29.59:581][551]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.30.44:929][874]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.30.45:505][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.23-13.30.46:081][908]LogSavePackage: Save=552.22ms
+[2017.08.23-13.30.46:081][908]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_Ship75CEB26B4AC28878DDEE45A47F3FA877.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.23-13.30.46:083][908]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.23-13.30.47:434][ 70]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.30.54:389][884]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.30.58:150][312]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.09:479][643]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.09:749][674]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.10:786][797]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.31.10:804][797]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.31.10:804][797]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.31.10:804][797]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:31:10)
+[2017.08.23-13.31.10:804][797]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.31.10:809][797]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005039s)
+[2017.08.23-13.31.10:810][797]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.31.10:810][797]LogPlayLevel: PIE: World Init took: (0.000469s)
+[2017.08.23-13.31.10:810][797]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.005659s)
+[2017.08.23-13.31.10:824][797]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.31.10:834][797]LogInit: FAudioDevice initialized.
+[2017.08.23-13.31.10:885][797]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.31.10:888][797]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.31.10
+[2017.08.23-13.31.10:888][797]LogWorld: Bringing up level for play took: 0.003044
+[2017.08.23-13.31.10:899][797]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.189
+[2017.08.23-13.31.10:899][797]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:943][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:950][799]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.10:967][801]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.31.17:167][545]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.31.17:239][545]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.31.18:980][747]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.21:855][ 72]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.22:824][172]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.23:491][238]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.31.26:438][572]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.31.49:708][209]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.31.51:261][388]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.32.06:540][981]LogSavePackage: Save=168.56ms
+[2017.08.23-13.32.06:540][981]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map2137E4B14A5761D85EEAE190FB91CEB0.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.32.06:541][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.32.06:603][981]LogSavePackage: Save=8.81ms
+[2017.08.23-13.32.06:603][981]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataA111E37B4541E2037F164EBF77E3689A.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.32.06:604][981]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.32.10:069][396]Cmd: SELECT NONE
+[2017.08.23-13.32.38:525][748]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.32.52:734][367]LogEditorTransaction: Undo Paste clipboard contents
+[2017.08.23-13.32.52:937][383]LogEditorTransaction: Undo Delete current selection
+[2017.08.23-13.32.53:116][397]LogEditorTransaction: Undo Delete current selection
+[2017.08.23-13.32.53:322][414]LogEditorTransaction: Undo Create Pin Link
+[2017.08.23-13.33.04:646][759]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.33.05:151][783]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.23-13.33.05:732][783]LogSavePackage: Save=557.18ms
+[2017.08.23-13.33.05:733][783]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_ShipBCADCE064EBB1204D1185DA62E823D64.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.23-13.33.05:735][783]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.23-13.33.07:830][ 29]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.33.07:844][ 29]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.07:844][ 29]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.33.07:844][ 29]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:33:07)
+[2017.08.23-13.33.07:844][ 29]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.33.07:848][ 29]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003761s)
+[2017.08.23-13.33.07:848][ 29]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.33.07:848][ 29]LogPlayLevel: PIE: World Init took: (0.000373s)
+[2017.08.23-13.33.07:848][ 29]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004262s)
+[2017.08.23-13.33.07:862][ 29]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.33.07:872][ 29]LogInit: FAudioDevice initialized.
+[2017.08.23-13.33.07:923][ 29]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.33.07:926][ 29]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.33.07
+[2017.08.23-13.33.07:927][ 29]LogWorld: Bringing up level for play took: 0.002997
+[2017.08.23-13.33.07:936][ 29]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.849
+[2017.08.23-13.33.07:937][ 29]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.07:982][ 30]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.08:490][ 91]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.08:541][ 91]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.08:979][141]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.33.20:053][261]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.33.21:888][477]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.33.28:903][264]LogSavePackage: Save=166.83ms
+[2017.08.23-13.33.28:903][264]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map9F34A0584E9CAEDEAE65FF98831819FB.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.33.28:905][264]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.33.28:963][264]LogSavePackage: Save=9.03ms
+[2017.08.23-13.33.28:963][264]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData62467B124680543254D02686AF675E13.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.33.28:964][264]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.33.29:698][352]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.33.29:712][352]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.29:712][352]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.33.29:712][352]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:33:29)
+[2017.08.23-13.33.29:712][352]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.33.29:716][352]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003661s)
+[2017.08.23-13.33.29:716][352]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.33.29:716][352]LogPlayLevel: PIE: World Init took: (0.000366s)
+[2017.08.23-13.33.29:716][352]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004157s)
+[2017.08.23-13.33.29:730][352]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.33.29:739][352]LogInit: FAudioDevice initialized.
+[2017.08.23-13.33.29:786][352]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.33.29:790][352]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.33.29
+[2017.08.23-13.33.29:790][352]LogWorld: Bringing up level for play took: 0.003145
+[2017.08.23-13.33.29:800][352]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.712
+[2017.08.23-13.33.29:801][352]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.38:281][362]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.38:344][362]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.49:394][670]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.33.51:172][845]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.33.51:185][845]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.51:185][845]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.33.51:185][845]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:33:51)
+[2017.08.23-13.33.51:185][845]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.33.51:189][845]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003652s)
+[2017.08.23-13.33.51:189][845]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.33.51:189][845]LogPlayLevel: PIE: World Init took: (0.000374s)
+[2017.08.23-13.33.51:189][845]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004150s)
+[2017.08.23-13.33.51:204][845]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.33.51:214][845]LogInit: FAudioDevice initialized.
+[2017.08.23-13.33.51:265][845]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.33.51:268][845]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.33.51
+[2017.08.23-13.33.51:269][845]LogWorld: Bringing up level for play took: 0.003132
+[2017.08.23-13.33.51:278][845]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.19
+[2017.08.23-13.33.51:278][845]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:318][846]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:334][848]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:359][851]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:377][853]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:393][855]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:418][858]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:436][860]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:460][863]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:477][865]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.51:494][867]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.33.52:710][ 13]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.52:780][ 13]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.33.54:653][230]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.33.59:456][742]Cmd: TRANSACTION UNDO
+[2017.08.23-13.33.59:456][742]LogEditorTransaction: Undo Edit DistanceBetweenFloors
+[2017.08.23-13.34.04:633][291]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.34.04:647][291]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.04:647][291]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.34.04:647][291]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:34:04)
+[2017.08.23-13.34.04:647][291]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.34.04:651][291]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003979s)
+[2017.08.23-13.34.04:651][291]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.34.04:651][291]LogPlayLevel: PIE: World Init took: (0.000375s)
+[2017.08.23-13.34.04:651][291]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004539s)
+[2017.08.23-13.34.04:694][291]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.34.04:703][291]LogInit: FAudioDevice initialized.
+[2017.08.23-13.34.04:756][291]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.34.04:759][291]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.34.04
+[2017.08.23-13.34.04:759][291]LogWorld: Bringing up level for play took: 0.002987
+[2017.08.23-13.34.04:769][291]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.318
+[2017.08.23-13.34.04:769][291]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:814][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.04:815][292]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.34.09:022][797]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.09:091][797]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.13:453][233]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.34.13:467][233]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.13:467][233]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.34.13:467][233]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:34:13)
+[2017.08.23-13.34.13:467][233]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.34.13:471][233]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003853s)
+[2017.08.23-13.34.13:471][233]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.34.13:472][233]LogPlayLevel: PIE: World Init took: (0.000373s)
+[2017.08.23-13.34.13:472][233]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004391s)
+[2017.08.23-13.34.13:505][233]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.34.13:515][233]LogInit: FAudioDevice initialized.
+[2017.08.23-13.34.13:564][233]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.34.13:568][233]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.34.13
+[2017.08.23-13.34.13:568][233]LogWorld: Bringing up level for play took: 0.003062
+[2017.08.23-13.34.13:578][233]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.491
+[2017.08.23-13.34.13:579][233]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.16:963][635]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.17:029][635]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.34.26:797][736]LogSavePackage: Save=168.54ms
+[2017.08.23-13.34.26:797][736]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map15010C944EC09DF3095EC1B94CD9E6F1.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.34.26:799][736]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.34.26:856][736]LogSavePackage: Save=7.35ms
+[2017.08.23-13.34.26:856][736]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltData0A56037E4874BC7E3D4FF4A71500E1F0.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.34.26:856][736]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.35.48:098][375]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.35.49:861][543]LogEditorViewport: Clicking on Actor (LMB): BP_Ship_C (BP_Ship)
+[2017.08.23-13.35.59:810][472]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2017.08.23-13.36.01:932][719]Cmd: TRANSACTION UNDO
+[2017.08.23-13.36.01:932][719]LogEditorTransaction: Undo Edit DeckScale
+[2017.08.23-13.36.02:897][825]Cmd: TRANSACTION UNDO
+[2017.08.23-13.36.02:897][825]LogEditorTransaction: Undo Clicking on Actors
+[2017.08.23-13.36.03:468][892]Cmd: TRANSACTION UNDO
+[2017.08.23-13.36.03:468][892]LogEditorTransaction: Undo Create Pin Link
+[2017.08.23-13.36.07:816][396]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.36.21:900][  7]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.36.40:273][450]LogSavePackage: Save=165.75ms
+[2017.08.23-13.36.40:273][450]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapA87BEA7248FEDC65E32266A0D1FA3A1F.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.36.40:276][450]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.36.40:336][450]LogSavePackage: Save=7.71ms
+[2017.08.23-13.36.40:336][450]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataA13465844BFBA016F7D919B2586540C7.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.36.40:337][450]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.36.40:656][488]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.36.40:669][488]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.36.40:669][488]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.36.40:669][488]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:36:40)
+[2017.08.23-13.36.40:669][488]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.36.40:673][488]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003592s)
+[2017.08.23-13.36.40:673][488]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.36.40:674][488]LogPlayLevel: PIE: World Init took: (0.000420s)
+[2017.08.23-13.36.40:674][488]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004136s)
+[2017.08.23-13.36.40:686][488]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.36.40:695][488]LogInit: FAudioDevice initialized.
+[2017.08.23-13.36.40:749][488]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.36.40:752][488]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.36.40
+[2017.08.23-13.36.40:753][488]LogWorld: Bringing up level for play took: 0.003138
+[2017.08.23-13.36.40:763][488]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.325
+[2017.08.23-13.36.40:763][488]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:807][489]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:823][491]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:839][493]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:864][496]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:881][498]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:898][500]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:923][503]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.40:940][505]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.36.46:106][125]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.36.46:172][125]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.28:224][749]LogSavePackage: Save=166.20ms
+[2017.08.23-13.37.28:224][749]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map17562162413D678B0EC43486E323E2CE.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.37.28:226][749]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.37.28:286][749]LogSavePackage: Save=7.47ms
+[2017.08.23-13.37.28:286][749]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataAFA50AFB4285F31B95F81EAEF13D5C23.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.37.28:286][749]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.37.28:587][785]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.37.28:600][785]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.28:600][785]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.37.28:600][785]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:37:28)
+[2017.08.23-13.37.28:600][785]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.37.28:604][785]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003575s)
+[2017.08.23-13.37.28:604][785]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.37.28:604][785]LogPlayLevel: PIE: World Init took: (0.000367s)
+[2017.08.23-13.37.28:605][785]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004069s)
+[2017.08.23-13.37.28:617][785]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.37.28:626][785]LogInit: FAudioDevice initialized.
+[2017.08.23-13.37.28:677][785]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.37.28:680][785]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.37.28
+[2017.08.23-13.37.28:681][785]LogWorld: Bringing up level for play took: 0.003165
+[2017.08.23-13.37.28:691][785]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.397
+[2017.08.23-13.37.28:691][785]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:735][786]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:751][788]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:768][790]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:793][793]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:809][795]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:834][798]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:851][800]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.28:868][802]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.37.32:252][208]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.32:314][208]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.35:544][588]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.37.35:989][612]LogSavePackage: Save=164.84ms
+[2017.08.23-13.37.35:989][612]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_MapABF3AC1C41FCDE0EE5370C92C9E2B7E8.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.37.35:991][612]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.37.36:049][612]LogSavePackage: Save=7.30ms
+[2017.08.23-13.37.36:049][612]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map_BuiltDataFBEC7B8F4E10B1BEA61B2886066B4DDC.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset'
+[2017.08.23-13.37.36:050][612]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map_BuiltData.uasset
+[2017.08.23-13.37.36:418][656]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.37.36:432][656]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.36:432][656]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.37.36:432][656]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:37:36)
+[2017.08.23-13.37.36:432][656]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.37.36:435][656]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003533s)
+[2017.08.23-13.37.36:436][656]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.37.36:436][656]LogPlayLevel: PIE: World Init took: (0.000367s)
+[2017.08.23-13.37.36:436][656]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004018s)
+[2017.08.23-13.37.36:448][656]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.37.36:456][656]LogInit: FAudioDevice initialized.
+[2017.08.23-13.37.36:506][656]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.37.36:509][656]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.37.36
+[2017.08.23-13.37.36:510][656]LogWorld: Bringing up level for play took: 0.003053
+[2017.08.23-13.37.36:519][656]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map -0.568
+[2017.08.23-13.37.36:520][656]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.37:555][776]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.37.37:615][776]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.10:837][643]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.38.11:499][684]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.38.11:513][684]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.11:513][684]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.38.11:513][684]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:38:11)
+[2017.08.23-13.38.11:513][684]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.38.11:516][684]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003557s)
+[2017.08.23-13.38.11:517][684]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.38.11:517][684]LogPlayLevel: PIE: World Init took: (0.000368s)
+[2017.08.23-13.38.11:517][684]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004048s)
+[2017.08.23-13.38.11:531][684]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.38.11:541][684]LogInit: FAudioDevice initialized.
+[2017.08.23-13.38.11:598][684]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.38.11:601][684]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.38.11
+[2017.08.23-13.38.11:602][684]LogWorld: Bringing up level for play took: 0.003240
+[2017.08.23-13.38.11:617][684]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.529
+[2017.08.23-13.38.11:617][684]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.15:320][999]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.15:412][999]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.28:900][515]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.38.29:490][552]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.38.29:503][552]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.29:503][552]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.38.29:503][552]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:38:29)
+[2017.08.23-13.38.29:503][552]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.38.29:507][552]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003681s)
+[2017.08.23-13.38.29:507][552]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.38.29:507][552]LogPlayLevel: PIE: World Init took: (0.000372s)
+[2017.08.23-13.38.29:508][552]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004177s)
+[2017.08.23-13.38.29:527][552]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.38.29:536][552]LogInit: FAudioDevice initialized.
+[2017.08.23-13.38.29:589][552]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.38.29:592][552]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.38.29
+[2017.08.23-13.38.29:593][552]LogWorld: Bringing up level for play took: 0.003084
+[2017.08.23-13.38.29:606][552]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.519
+[2017.08.23-13.38.29:607][552]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:655][553]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.29:672][555]LogScriptCore:Warning: Script Msg: Divide by zero
+Script call stack:
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:OutsideTick
+	Function /Game/Blueprints/ZoomCam/bp_ZoomCam.bp_ZoomCam_C:ExecuteUbergraph_bp_ZoomCam
+
+[2017.08.23-13.38.31:926][823]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.32:013][823]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.37:580][462]BlueprintLog: New page: Compile BP_Ship
+[2017.08.23-13.38.37:983][475]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.23-13.38.38:569][475]LogSavePackage: Save=558.23ms
+[2017.08.23-13.38.38:570][475]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_ShipE924950044AE120EF97C628594641569.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.23-13.38.38:572][475]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.23-13.38.39:096][530]LogTemp: Repeting last play command: New Editor Window (PIE)
+[2017.08.23-13.38.39:109][530]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.39:109][530]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.08.23-13.38.39:109][530]PIE: New page: PIE session: ScanReach_Map (23 Aug 2017 17:38:39)
+[2017.08.23-13.38.39:109][530]LogPlayLevel: Creating play world package: /Game/Scenes/UEDPIE_0_ScanReach_Map
+[2017.08.23-13.38.39:113][530]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003662s)
+[2017.08.23-13.38.39:113][530]LogAIModule: Creating AISystem for world ScanReach_Map
+[2017.08.23-13.38.39:114][530]LogPlayLevel: PIE: World Init took: (0.000372s)
+[2017.08.23-13.38.39:114][530]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Scenes/ScanReach_Map.ScanReach_Map to /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map (0.004164s)
+[2017.08.23-13.38.39:128][530]LogInit: XAudio2 using 'Speakers (2- Logitech G933 Gaming Headset)' : 6 channels at 48 kHz using 16 bits per sample (channel mask 0x3f)
+[2017.08.23-13.38.39:137][530]LogInit: FAudioDevice initialized.
+[2017.08.23-13.38.39:199][530]LogLoad: Game class is 'ScanReach_GM_C'
+[2017.08.23-13.38.39:202][530]LogWorld: Bringing World /Game/Scenes/UEDPIE_0_ScanReach_Map.ScanReach_Map up for play (max tick rate 0) at 2017.08.23-15.38.39
+[2017.08.23-13.38.39:202][530]LogWorld: Bringing up level for play took: 0.003137
+[2017.08.23-13.38.39:219][530]PIE: Info Play in editor start time for /Game/Scenes/UEDPIE_0_ScanReach_Map 0.131
+[2017.08.23-13.38.39:219][530]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.43:368][915]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.43:451][915]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel' has LevelScriptBlueprint '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map' with GeneratedClass '/Game/Scenes/ScanReach_Map.ScanReach_Map_C' with ClassGeneratedBy '/Game/Scenes/ScanReach_Map.ScanReach_Map:PersistentLevel.ScanReach_Map'
+[2017.08.23-13.38.59:486][816]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.23-13.39.00:066][816]LogSavePackage: Save=555.43ms
+[2017.08.23-13.39.00:066][816]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_ShipDF69941F4F352BCD2A813998C18DB095.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.23-13.39.00:067][816]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.23-13.39.02:304][ 55]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Ship/BP_Ship" FILE="../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset" SILENT=true
+[2017.08.23-13.39.02:885][ 55]LogSavePackage: Save=556.58ms
+[2017.08.23-13.39.02:885][ 55]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/BP_ShipD23417FD43E413839327CBBD96698552.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset'
+[2017.08.23-13.39.02:886][ 55]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Blueprints/Ship/BP_Ship.uasset
+[2017.08.23-13.39.07:472][525]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Test_Plane)
+[2017.08.23-13.39.28:927][943]LogSavePackage: Save=165.83ms
+[2017.08.23-13.39.28:927][943]LogSavePackage: Moving '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/ScanReach_Map2907DCAA4DCACFF6DAA1C6A9E17A64F9.tmp' to '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap'
+[2017.08.23-13.39.28:928][943]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Scenes/ScanReach_Map.umap
+[2017.08.23-13.39.28:954][943]LogFileHelpers: Saving map 'ScanReach_Map' took 0.263
+[2017.08.23-13.39.29:246][944]Cmd: QUIT_EDITOR
+[2017.08.23-13.39.29:598][944]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.23-13.39.29:599][944]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.23-13.39.29:605][944]LogExit: Preparing to exit.
+[2017.08.23-13.39.30:754][944]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' was aborted.
+[2017.08.23-13.39.30:776][944]LogExit: Editor shut down
+[2017.08.23-13.39.30:781][944]LogExit: Transaction tracking system shut down
+[2017.08.23-13.39.30:849][944]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.23-13.39.30:849][944]LogExit: Object subsystem successfully closed.
+[2017.08.23-13.39.30:867][944]LogD3D11RHI: Shutdown
+[2017.08.23-13.39.30:867][944]LogD3D11RHI: CleanupD3DDevice
+[2017.08.23-13.39.30:911][944]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module BlueprintGraph (532)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (530)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module TextureEditor (528)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (526)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.08.23-13.39.30:920][944]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.08.23-13.39.30:920][944]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.08.23-13.39.30:921][944]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Collections/' was aborted.
+[2017.08.23-13.39.30:921][944]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/Developers/Bendick/Collections/' was aborted.
+[2017.08.23-13.39.30:921][944]LogDirectoryWatcher: A directory notification for 'C:/Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Saved/Collections/' was aborted.
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.08.23-13.39.30:921][944]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.08.23-13.39.31:455][944]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.08.23-13.39.31:456][944]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.08.23-13.39.31:507][944]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.08.23-13.39.31:512][944]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.08.23-13.39.31:657][944]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.08.23-13.39.31:658][944]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.08.23-13.39.31:759][944]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.08.23-13.39.31:859][944]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.08.23-13.39.31:859][944]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.08.23-13.39.31:859][944]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.08.23-13.39.31:859][944]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.08.23-13.39.31:859][944]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.08.23-13.39.31:859][944]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.08.23-13.39.31:860][944]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.08.23-13.39.31:861][944]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.08.23-13.39.31:861][944]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.08.23-13.39.31:861][944]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.08.23-13.39.31:861][944]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.08.23-13.39.31:861][944]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.08.23-13.39.31:861][944]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.08.23-13.39.32:009][944]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.08.23-13.39.32:009][944]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Bendick/Documents/GitHub/SR_Prototype_V2/SR_Prototype_V2/Content/' was aborted.
+[2017.08.23-13.39.32:009][944]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.08.23-13.39.32:009][944]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.08.23-13.39.32:010][944]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.08.23-13.39.32:011][944]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.08.23-13.39.32:058][944]LogDerivedDataCache: Shutdown
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.08.23-13.39.32:058][944]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.08.23-13.39.32:059][944]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.08.23-13.39.32:059][944]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.08.23-13.39.32:059][944]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.08.23-13.39.32:059][944]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7DE16161-490F-4547-C95C-DEBC7ACE9365%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=0c75b627499df609a8813c9ced46962c%7Cfebaf0232e0e4e628b45a2bec753bbbc%7C408adb04-e8c0-4c29-a1fb-4d7ed05dedd7&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.08.23-13.39.32:059][944]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7DE16161-490F-4547-C95C-DEBC7ACE9365%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=0c75b627499df609a8813c9ced46962c%7Cfebaf0232e0e4e628b45a2bec753bbbc%7C408adb04-e8c0-4c29-a1fb-4d7ed05dedd7&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.08.23-13.39.32:077][944]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.08.23-13.39.32:078][944]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.08.23-13.39.32:080][944]LogExit: Exiting.
+[2017.08.23-13.39.32:092][944]Log file closed, 08/23/17 15:39:32
